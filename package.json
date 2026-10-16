@@ -1,23 +1,40 @@
 {
-  "name": "shelter-landing",
-  "type": "module",
-  "version": "0.0.1",
-  "engines": {
-    "node": ">=22.22.0"
-  },
-  "scripts": {
-    "dev": "astro dev",
-    "build": "astro build",
-    "preview": "astro preview",
-    "astro": "astro"
-  },
-  "dependencies": {
-    "@astrojs/svelte": "^9.1.0",
-    "@tailwindcss/vite": "^4.3.3",
-    "astro": "^7.4.0",
-    "shelter-assets": "link:../assets",
-    "svelte": "^5.57.2",
-    "tailwindcss": "^4.3.3",
-    "typescript": "^6.0.3"
-  }
+	"name": "shelter-landing",
+	"type": "module",
+	"version": "0.0.1",
+	"engines": {
+		"node": ">=22.22.0"
+	},
+	"scripts": {
+		"dev": "astro dev",
+		"build": "astro build",
+		"preview": "astro preview",
+		"astro": "astro",
+		"check": "astro check",
+		"lint": "prettier --check . && eslint .",
+		"format": "prettier --write ."
+	},
+	"dependencies": {
+		"@astrojs/svelte": "^9.1.0",
+		"@tailwindcss/vite": "^4.3.3",
+		"astro": "^7.4.0",
+		"shelter-assets": "link:../assets",
+		"svelte": "^5.57.2",
+		"tailwindcss": "^4.3.3"
+	},
+	"devDependencies": {
+		"@astrojs/check": "^0.9.10",
+		"@eslint/js": "^10.0.1",
+		"eslint": "^10.12.0",
+		"eslint-config-prettier": "^10.1.8",
+		"eslint-plugin-astro": "^3.2.1",
+		"eslint-plugin-svelte": "^3.23.1",
+		"globals": "^17.13.0",
+		"prettier": "^3.9.10",
+		"prettier-plugin-astro": "^1.1.1",
+		"prettier-plugin-svelte": "^4.1.1",
+		"prettier-plugin-tailwindcss": "^0.8.1",
+		"typescript": "^6.0.3",
+		"typescript-eslint": "^8.71.2"
+	}
 }

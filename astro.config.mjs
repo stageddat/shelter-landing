@@ -1,5 +1,18 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
+import svelte from '@astrojs/svelte';
+import tailwindcss from '@tailwindcss/vite';
+
 // https://astro.build/config
-export default defineConfig({});
+export default defineConfig({
+	integrations: [svelte()],
+
+	vite: {
+		plugins: [tailwindcss()],
+		server: {
+			// shelter-assets esta en ../assets, pero vite solo sirve desde el proyecto
+			fs: { allow: ['.', '../assets'] }
+		}
+	}
+});
