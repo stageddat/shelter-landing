@@ -7,6 +7,8 @@ import { defaultLocale, locales } from './src/lib/locales.ts';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://shelter.cat',
+
 	integrations: [svelte()],
 
 	// lista de idiomas en src/lib/locales.ts
