@@ -1,0 +1,6 @@
+languageIds:
+  - astro
+  - svelte
+usageMatchRegex:
+  - "[^\\w\\d]t\\(\\s*['\"`]({key})['\"`]"
+monopoly: false
