@@ -1,0 +1,32 @@
+---
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { pathWithoutLocale } from '../lib/i18n';
+import { localeName, locales, officialLocales, type Locale } from '../lib/locales';
+
+const current = (Astro.currentLocale ?? 'en') as Locale;
+const path = pathWithoutLocale(Astro.url.pathname);
+---
+
+<details class="relative ml-20">
+	<summary class="cursor-pointer list-none rounded-button border px-3 py-2">
+		{localeName(current)}
+	</summary>
+	<ul class="absolute right-0 z-10 mt-2 w-44 rounded-(--radius) border bg-popover p-1">
+		{locales.map((locale) => (
+			<li>
+				<a
+					href={getRelativeLocaleUrl(locale, path)}
+					hreflang={locale}
+					lang={locale}
+					aria-current={locale === current ? 'page' : undefined}
+					class="flex justify-between rounded-sm px-3 py-2 hover:bg-accent aria-[current=page]:font-semibold"
+				>
+					{localeName(locale)}
+					<span class="text-sm text-muted-foreground">
+						{officialLocales.includes(locale) ? 'official' : 'community'}
+					</span>
+				</a>
+			</li>
+		))}
+	</ul>
+</details>

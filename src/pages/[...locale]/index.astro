@@ -1,0 +1,19 @@
+---
+import { Button } from 'shelter-assets';
+import LanguageSelector from '../../components/LanguageSelector.astro';
+import Layout from '../../layouts/Layout.astro';
+import { localeStaticPaths, useTranslations } from '../../lib/i18n';
+
+export const getStaticPaths = localeStaticPaths;
+
+const t = useTranslations(Astro.currentLocale);
+---
+
+<Layout title={t('metadata.landing.title')}>
+	<main class="flex flex-col items-start gap-4 p-8">
+		<LanguageSelector class="ml-10" />
+		<h1>{t('landing.hero.title')}</h1>
+		<p>{t('landing.hero.subtitle')}</p>
+		<Button>{t('landing.start.button')}</Button>
+	</main>
+</Layout>

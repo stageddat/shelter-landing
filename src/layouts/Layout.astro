@@ -1,4 +1,7 @@
 ---
+import { getAbsoluteLocaleUrl } from 'astro:i18n';
+import { pathWithoutLocale } from '../lib/i18n';
+import { defaultLocale, locales } from '../lib/locales';
 import '../styles/global.css';
 
 interface Props {
@@ -6,9 +9,10 @@ interface Props {
 }
 
 const { title } = Astro.props;
+const path = pathWithoutLocale(Astro.url.pathname);
 ---
 
-<html lang="en">
+<html lang={Astro.currentLocale}>
 	<head>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width" />
@@ -16,6 +20,13 @@ const { title } = Astro.props;
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+
+		<!-- decir a gugul que hay mas idiomas -->
+		<link rel="canonical" href={getAbsoluteLocaleUrl(Astro.currentLocale ?? defaultLocale, path)} />
+		{locales.map((locale) => (
+			<link rel="alternate" hreflang={locale} href={getAbsoluteLocaleUrl(locale, path)} />
+		))}
+		<link rel="alternate" hreflang="x-default" href={getAbsoluteLocaleUrl(defaultLocale, path)} />
 	</head>
 	<body>
 		<slot />
