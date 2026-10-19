@@ -1,0 +1,46 @@
+---
+import { useTranslations } from '../../lib/i18n';
+// ?url: esto permite cachear en astro? o eso dice claude xd
+import machkaHero from '../../assets/machka-hero.svg?url';
+
+const t = useTranslations(Astro.currentLocale);
+---
+
+<section class="relative flex min-h-screen w-full items-center justify-center overflow-hidden bg-background px-8">
+	<div class="mx-auto flex w-full max-w-7xl flex-col items-center justify-center gap-0 pt-32 pb-20 lg:flex-row lg:items-center lg:pt-0 lg:pb-0">
+		<div class="flex flex-1 flex-col items-center text-center lg:items-start lg:text-left">
+			<div class="space-y-8">
+				<h1 class="text-8xl leading-[0.8] font-normal tracking-wide text-foreground sm:text-9xl md:text-[10rem] lg:text-[13rem]">
+					{t('landing.hero.title')}
+				</h1>
+				<p class="mx-auto max-w-md text-center text-xl leading-relaxed text-pretty text-muted-foreground lg:mx-0 lg:text-left lg:text-3xl">
+					{t('landing.hero.subtitle')}
+				</p>
+			</div>
+		</div>
+
+		<div class="flex flex-1 items-center justify-center lg:-ml-16">
+			<svg
+				class="machka-hero h-auto w-full max-w-md sm:max-w-lg lg:max-w-175"
+				viewBox="0 0 1400 1400"
+				role="img"
+				aria-label={t('landing.hero.image_alt')}
+			>
+				<use href={`${machkaHero}#hero`} />
+			</svg>
+		</div>
+	</div>
+</section>
+
+<style>
+	/* light*/
+	.machka-hero {
+		--hero-fill: var(--background);
+		--hero-line: var(--foreground);
+	}
+	/* dark themes. :global pq .dark esta en <html>, fuera de este componente */
+	:global(.dark) .machka-hero {
+		--hero-fill: var(--foreground);
+		--hero-line: var(--background);
+	}
+</style>
