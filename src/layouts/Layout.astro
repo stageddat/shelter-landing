@@ -1,5 +1,7 @@
 ---
 import { getAbsoluteLocaleUrl } from 'astro:i18n';
+import { fontInitScript, themeInitScript } from 'shelter-assets';
+import latinFont from 'shelter-assets/fonts/playpen-sans/latin.woff2?url';
 import { pathWithoutLocale } from '../lib/i18n';
 import { defaultLocale, locales } from '../lib/locales';
 import '../styles/global.css';
@@ -15,6 +17,12 @@ const path = pathWithoutLocale(Astro.url.pathname);
 <html lang={Astro.currentLocale}>
 	<head>
 		<meta charset="utf-8" />
+		<!-- SIEMPRE CARGAR SCRIPT DE TEMA PRIMERO -->
+		<script is:inline set:html={themeInitScript} />
+		<!-- elegir fuente -> shelter-assets font-loading.ts -->
+		<script is:inline set:html={fontInitScript} />
+		<!-- descargar -->
+		<link rel="preload" href={latinFont} as="font" type="font/woff2" crossorigin />
 		<meta name="viewport" content="width=device-width" />
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="icon" href="/favicon.ico" />
