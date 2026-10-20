@@ -38,5 +38,11 @@ const path = pathWithoutLocale(Astro.url.pathname);
 	</head>
 	<body>
 		<slot />
+		<script>
+			import { watchThemePreference } from 'shelter-assets';
+
+			// seguir el tema si cambia en otra pestaña o en el sistema (con 'system')
+			watchThemePreference();
+		</script>
 	</body>
 </html>

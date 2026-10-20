@@ -1,32 +1,22 @@
 ---
+// Fills shelter-assets' LanguageSelector with this site's languages and links.
+// Rendered to HTML at build time: no JavaScript reaches the browser.
 import { getRelativeLocaleUrl } from 'astro:i18n';
+import { LanguageSelector, type LanguageOption } from 'shelter-assets';
 import { pathWithoutLocale } from '../lib/i18n';
 import { localeName, locales, officialLocales, type Locale } from '../lib/locales';
 
+type Props = { class?: string };
+
 const current = (Astro.currentLocale ?? 'en') as Locale;
 const path = pathWithoutLocale(Astro.url.pathname);
+
+const languages: LanguageOption[] = locales.map((locale) => ({
+	locale,
+	label: localeName(locale),
+	href: getRelativeLocaleUrl(locale, path),
+	official: officialLocales.includes(locale)
+}));
 ---
 
-<details class="relative ml-20">
-	<summary class="cursor-pointer list-none rounded-button border px-3 py-2">
-		{localeName(current)}
-	</summary>
-	<ul class="absolute right-0 z-10 mt-2 w-44 rounded-(--radius) border bg-popover p-1">
-		{locales.map((locale) => (
-			<li>
-				<a
-					href={getRelativeLocaleUrl(locale, path)}
-					hreflang={locale}
-					lang={locale}
-					aria-current={locale === current ? 'page' : undefined}
-					class="flex justify-between rounded-sm px-3 py-2 hover:bg-accent aria-[current=page]:font-semibold"
-				>
-					{localeName(locale)}
-					<span class="text-sm text-muted-foreground">
-						{officialLocales.includes(locale) ? 'official' : 'community'}
-					</span>
-				</a>
-			</li>
-		))}
-	</ul>
-</details>
+<LanguageSelector {current} {languages} class={Astro.props.class} />

@@ -1,0 +1,16 @@
+---
+// shelter-assets' ThemeSelector as plain HTML (no Svelte island). Its only JavaScript is
+// initThemeSelectors, in the <script> below: Astro bundles it once per page, however many
+// selectors there are.
+import { ThemeSelector } from 'shelter-assets';
+
+type Props = { class?: string };
+---
+
+<ThemeSelector class={Astro.props.class} />
+
+<script>
+	import { initThemeSelectors } from 'shelter-assets';
+
+	initThemeSelectors();
+</script>
