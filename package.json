@@ -16,6 +16,7 @@
 	},
 	"dependencies": {
 		"@astrojs/svelte": "^9.1.0",
+		"@lucide/astro": "^1.59.0",
 		"@tailwindcss/vite": "^4.3.3",
 		"astro": "^7.4.0",
 		"i18next": "^26.4.7",
