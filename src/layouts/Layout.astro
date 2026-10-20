@@ -4,13 +4,15 @@ import { fontInitScript, themeInitScript } from 'shelter-assets';
 import latinFont from 'shelter-assets/fonts/playpen-sans/latin.woff2?url';
 import { pathWithoutLocale } from '../lib/i18n';
 import { defaultLocale, locales } from '../lib/locales';
+import Footer from '../components/sections/Footer.astro';
 import '../styles/global.css';
 
 interface Props {
 	title: string;
+	description: string;
 }
 
-const { title } = Astro.props;
+const { title, description } = Astro.props;
 const path = pathWithoutLocale(Astro.url.pathname);
 ---
 
@@ -28,6 +30,7 @@ const path = pathWithoutLocale(Astro.url.pathname);
 		<link rel="icon" href="/favicon.ico" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
+		<meta name="description" content={description} />
 
 		<!-- decir a gugul que hay mas idiomas -->
 		<link rel="canonical" href={getAbsoluteLocaleUrl(Astro.currentLocale ?? defaultLocale, path)} />
@@ -38,6 +41,7 @@ const path = pathWithoutLocale(Astro.url.pathname);
 	</head>
 	<body>
 		<slot />
+		<Footer />
 		<script>
 			import { watchThemePreference } from 'shelter-assets';
 
