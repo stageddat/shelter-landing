@@ -1,6 +1,7 @@
 ---
 import { Button } from 'shelter-assets';
 import LanguageSelector from '../../components/LanguageSelector.astro';
+import Features from '../../components/sections/Features.astro';
 import Hero from '../../components/sections/Hero.astro';
 import ThemeSelector from '../../components/ThemeSelector.astro';
 import Layout from '../../layouts/Layout.astro';
@@ -12,7 +13,7 @@ const t = useTranslations(Astro.currentLocale);
 ---
 
 <Layout title={t('metadata.landing.title')}>
-	<!-- testing controls until the navbar arrives -->
+	<!-- testing hasta el navbar real -->
 	<div class="flex items-center justify-end gap-2 p-4">
 		<LanguageSelector />
 		<ThemeSelector />
@@ -20,5 +21,6 @@ const t = useTranslations(Astro.currentLocale);
 	</div>
 	<main>
 		<Hero />
+		<Features />
 	</main>
 </Layout>

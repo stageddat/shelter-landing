@@ -1,0 +1,40 @@
+---
+import Bird from '@lucide/astro/icons/bird';
+import CloudSync from '@lucide/astro/icons/cloud-sync';
+import Database from '@lucide/astro/icons/database';
+import { useTranslations } from '../../lib/i18n';
+import FeatureCard from '../FeatureCard.astro';
+
+const t = useTranslations(Astro.currentLocale);
+
+const features = [
+	{
+		icon: Database,
+		title: t('landing.features.1.title'),
+		text: t('landing.features.1.description')
+	},
+	{
+		icon: CloudSync,
+		title: t('landing.features.2.title'),
+		text: t('landing.features.2.description')
+	},
+	{ icon: Bird, title: t('landing.features.3.title'), text: t('landing.features.3.description') }
+];
+---
+
+<section
+	id="features"
+	class="relative overflow-hidden bg-background px-4 py-2 lg:px-8 lg:py-12 lg:pt-24"
+>
+	<div class="mx-auto xl:max-w-10/12">
+		<h2 class="mb-4 text-center text-5xl font-normal text-pretty text-foreground sm:text-6xl lg:mb-7 lg:text-7xl">
+			{t('landing.features.title')}
+		</h2>
+
+		<div class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
+			{features.map((feature) => (
+				<FeatureCard {...feature} />
+			))}
+		</div>
+	</div>
+</section>
