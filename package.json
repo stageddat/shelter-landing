@@ -20,6 +20,7 @@
 		"@tailwindcss/vite": "^4.3.3",
 		"astro": "^7.4.0",
 		"i18next": "^26.4.7",
+		"sharp": "^0.35.5",
 		"shelter-assets": "link:../assets",
 		"svelte": "^5.57.2",
 		"tailwindcss": "^4.3.3"
