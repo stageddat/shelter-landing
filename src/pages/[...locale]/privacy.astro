@@ -1,0 +1,50 @@
+---
+import LegalSection from '../../components/LegalSection.astro';
+import LegalPage from '../../layouts/LegalPage.astro';
+import { localeStaticPaths, useTranslations } from '../../lib/i18n';
+
+export const getStaticPaths = localeStaticPaths;
+
+const t = useTranslations(Astro.currentLocale);
+
+const sections = [
+	{
+		title: t('landing.privacy.noCollect.title'),
+		paragraphs: [t('landing.privacy.noCollect.content')]
+	},
+	{
+		title: t('landing.privacy.storage.title'),
+		paragraphs: [t('landing.privacy.storage.intro')],
+		items: [
+			t('landing.privacy.storage.items.device'),
+			t('landing.privacy.storage.items.read'),
+			t('landing.privacy.storage.items.encrypted'),
+			t('landing.privacy.storage.items.control')
+		]
+	},
+	{
+		title: t('landing.privacy.analytics.title'),
+		paragraphs: [t('landing.privacy.analytics.content')]
+	},
+	{ title: t('landing.privacy.noAds.title'), paragraphs: [t('landing.privacy.noAds.content')] },
+	{ title: t('landing.privacy.cookies.title'), paragraphs: [t('landing.privacy.cookies.content')] },
+	{ title: t('landing.privacy.rights.title'), paragraphs: [t('landing.privacy.rights.content')] },
+	{
+		title: t('landing.privacy.futureSync.title'),
+		paragraphs: [t('landing.privacy.futureSync.content')]
+	},
+	{ title: t('landing.privacy.changes.title'), paragraphs: [t('landing.privacy.changes.content')] },
+	{ title: t('landing.privacy.contact.title'), paragraphs: [t('landing.privacy.contact.content')] }
+];
+---
+
+<LegalPage
+	metaTitle={t('metadata.privacy.title')}
+	description={t('metadata.privacy.description')}
+	title={t('landing.privacy.title')}
+	lastUpdated={t('landing.privacy.lastUpdated')}
+>
+	{sections.map((section) => (
+		<LegalSection {...section} />
+	))}
+</LegalPage>

@@ -1,8 +1,11 @@
 ---
 import { Button } from 'shelter-assets';
 import LanguageSelector from '../../components/LanguageSelector.astro';
+import Faqs from '../../components/sections/Faqs.astro';
 import Features from '../../components/sections/Features.astro';
 import Hero from '../../components/sections/Hero.astro';
+import Security from '../../components/sections/Security.astro';
+import Start from '../../components/sections/Start.astro';
 import ThemeSelector from '../../components/ThemeSelector.astro';
 import Layout from '../../layouts/Layout.astro';
 import { localeStaticPaths, useTranslations } from '../../lib/i18n';
@@ -12,7 +15,7 @@ export const getStaticPaths = localeStaticPaths;
 const t = useTranslations(Astro.currentLocale);
 ---
 
-<Layout title={t('metadata.landing.title')}>
+<Layout title={t('metadata.landing.title')} description={t('metadata.landing.description')}>
 	<!-- testing hasta el navbar real -->
 	<div class="flex items-center justify-end gap-2 p-4">
 		<LanguageSelector />
@@ -22,5 +25,8 @@ const t = useTranslations(Astro.currentLocale);
 	<main>
 		<Hero />
 		<Features />
+		<Security />
+		<Faqs />
+		<Start />
 	</main>
 </Layout>

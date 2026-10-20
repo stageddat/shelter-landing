@@ -1,0 +1,55 @@
+---
+import LegalSection from '../../components/LegalSection.astro';
+import LegalPage from '../../layouts/LegalPage.astro';
+import { localeStaticPaths, useTranslations } from '../../lib/i18n';
+
+export const getStaticPaths = localeStaticPaths;
+
+const t = useTranslations(Astro.currentLocale);
+
+const sections = [
+	{
+		title: t('landing.cookies.whatAreCookies.title'),
+		paragraphs: [t('landing.cookies.whatAreCookies.content')]
+	},
+	{
+		title: t('landing.cookies.ourApproach.title'),
+		paragraphs: [t('landing.cookies.ourApproach.content')]
+	},
+	{
+		title: t('landing.cookies.whatWeDontUse.title'),
+		paragraphs: [t('landing.cookies.whatWeDontUse.intro')],
+		items: [
+			t('landing.cookies.whatWeDontUse.items.tracking'),
+			t('landing.cookies.whatWeDontUse.items.advertising'),
+			t('landing.cookies.whatWeDontUse.items.analytics'),
+			t('landing.cookies.whatWeDontUse.items.thirdParty'),
+			t('landing.cookies.whatWeDontUse.items.personal')
+		]
+	},
+	{
+		title: t('landing.cookies.localStorage.title'),
+		paragraphs: [
+			t('landing.cookies.localStorage.content1'),
+			t('landing.cookies.localStorage.content2')
+		]
+	},
+	{
+		title: t('landing.cookies.futureSync.title'),
+		paragraphs: [t('landing.cookies.futureSync.content')]
+	},
+	{ title: t('landing.cookies.updates.title'), paragraphs: [t('landing.cookies.updates.content')] },
+	{ title: t('landing.cookies.contact.title'), paragraphs: [t('landing.cookies.contact.content')] }
+];
+---
+
+<LegalPage
+	metaTitle={t('metadata.cookies.title')}
+	description={t('metadata.cookies.description')}
+	title={t('landing.cookies.title')}
+	lastUpdated={t('landing.cookies.lastUpdated')}
+>
+	{sections.map((section) => (
+		<LegalSection {...section} />
+	))}
+</LegalPage>

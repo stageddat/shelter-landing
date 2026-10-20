@@ -1,0 +1,37 @@
+---
+// privacy, terms, cookies: same layout, only the sections change
+import ArrowLeft from '@lucide/astro/icons/arrow-left';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { useTranslations } from '../lib/i18n';
+import { defaultLocale } from '../lib/locales';
+import Layout from './Layout.astro';
+
+type Props = {
+	metaTitle: string;
+	description: string;
+	title: string;
+	lastUpdated: string;
+};
+
+const { metaTitle, description, title, lastUpdated } = Astro.props;
+const locale = Astro.currentLocale ?? defaultLocale;
+const t = useTranslations(locale);
+---
+
+<Layout title={metaTitle} description={description}>
+	<main class="mx-auto max-w-4xl px-8 py-20 lg:py-24">
+		<a
+			href={getRelativeLocaleUrl(locale, '/')}
+			class="mb-6 flex items-center underline-offset-4 hover:underline"
+		>
+			<ArrowLeft class="mr-2 size-4" aria-hidden="true" />
+			{t('landing.backToHome')}
+		</a>
+		<h1 class="mb-2 text-6xl font-bold text-foreground">{title}</h1>
+		<p class="mb-12 text-lg text-balance text-muted-foreground">{lastUpdated}</p>
+
+		<div class="space-y-12">
+			<slot />
+		</div>
+	</main>
+</Layout>

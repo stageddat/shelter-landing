@@ -270,6 +270,7 @@
 				"tester": "tester",
 				"translator": "translator"
 			}
-		}
+		},
+		"backToHome": "go back to home"
 	}
 }

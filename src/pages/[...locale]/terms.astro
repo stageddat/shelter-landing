@@ -1,0 +1,57 @@
+---
+import LegalSection from '../../components/LegalSection.astro';
+import LegalPage from '../../layouts/LegalPage.astro';
+import { localeStaticPaths, useTranslations } from '../../lib/i18n';
+
+export const getStaticPaths = localeStaticPaths;
+
+const t = useTranslations(Astro.currentLocale);
+
+const sections = [
+	{ title: t('landing.terms.welcome.title'), paragraphs: [t('landing.terms.welcome.content')] },
+	{ title: t('landing.terms.whatIs.title'), paragraphs: [t('landing.terms.whatIs.content')] },
+	{
+		title: t('landing.terms.yourContent.title'),
+		paragraphs: [t('landing.terms.yourContent.content1'), t('landing.terms.yourContent.content2')]
+	},
+	{
+		title: t('landing.terms.acceptableUse.title'),
+		paragraphs: [t('landing.terms.acceptableUse.intro')],
+		items: [
+			t('landing.terms.acceptableUse.items.illegal'),
+			t('landing.terms.acceptableUse.items.hack'),
+			t('landing.terms.acceptableUse.items.interfere'),
+			t('landing.terms.acceptableUse.items.malware'),
+			t('landing.terms.acceptableUse.items.ip'),
+			t('landing.terms.acceptableUse.items.superearth')
+		]
+	},
+	{
+		title: t('landing.terms.availability.title'),
+		paragraphs: [t('landing.terms.availability.content1'), t('landing.terms.availability.content2')]
+	},
+	{ title: t('landing.terms.backups.title'), paragraphs: [t('landing.terms.backups.content')] },
+	{
+		title: t('landing.terms.noWarranty.title'),
+		paragraphs: [t('landing.terms.noWarranty.content')]
+	},
+	{ title: t('landing.terms.liability.title'), paragraphs: [t('landing.terms.liability.content')] },
+	{
+		title: t('landing.terms.futureSync.title'),
+		paragraphs: [t('landing.terms.futureSync.content')]
+	},
+	{ title: t('landing.terms.changes.title'), paragraphs: [t('landing.terms.changes.content')] },
+	{ title: t('landing.terms.contact.title'), paragraphs: [t('landing.terms.contact.content')] }
+];
+---
+
+<LegalPage
+	metaTitle={t('metadata.terms.title')}
+	description={t('metadata.terms.description')}
+	title={t('landing.terms.title')}
+	lastUpdated={t('landing.terms.lastUpdated')}
+>
+	{sections.map((section) => (
+		<LegalSection {...section} />
+	))}
+</LegalPage>
