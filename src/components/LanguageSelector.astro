@@ -6,7 +6,7 @@ import { LanguageSelector, type LanguageOption } from 'shelter-assets';
 import { pathWithoutLocale } from '../lib/i18n';
 import { localeName, locales, officialLocales, type Locale } from '../lib/locales';
 
-type Props = { class?: string };
+type Props = { class?: string; align?: 'start' | 'end'; variant?: 'popover' | 'inline' };
 
 const current = (Astro.currentLocale ?? 'en') as Locale;
 const path = pathWithoutLocale(Astro.url.pathname);
@@ -19,4 +19,10 @@ const languages: LanguageOption[] = locales.map((locale) => ({
 }));
 ---
 
-<LanguageSelector {current} {languages} class={Astro.props.class} />
+<LanguageSelector
+	{current}
+	{languages}
+	class={Astro.props.class}
+	align={Astro.props.align}
+	variant={Astro.props.variant}
+/>
