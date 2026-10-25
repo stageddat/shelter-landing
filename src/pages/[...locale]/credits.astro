@@ -67,11 +67,11 @@ const contributors: {
 
 <Layout title={t('metadata.credits.title')} description={t('metadata.credits.description')}>
 	<main class="mx-auto mt-12 max-w-4xl px-4 py-12">
-		<h1 class="mb-8 text-6xl font-bold text-foreground">{t('landing.credits.title')}</h1>
-		<p class="text-xl text-pretty text-muted-foreground">{t('landing.credits.intro')}</p>
+		<h1 class="mb-8 font-bold text-foreground">{t('landing.credits.title')}</h1>
+		<p class="text-pretty text-muted-foreground">{t('landing.credits.intro')}</p>
 
 		<section class="mt-10">
-			<h2 class="border-b-2 border-primary pb-2 text-3xl font-bold text-balance text-primary">
+			<h2 class="border-b-2 border-primary pb-2 font-bold text-balance text-primary">
 				{t('landing.credits.contributors')}
 			</h2>
 			<div class="mt-4 grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-3">
@@ -89,12 +89,10 @@ const contributors: {
 							class="size-32 shrink-0 rounded-full object-cover"
 						/>
 						<div>
-							<p class="text-3xl font-medium tracking-wide">{contributor.name}</p>
+							<p class="font-medium tracking-wide">{contributor.name}</p>
 							<div class="mt-1 flex flex-row flex-wrap items-center justify-center gap-2">
 								{contributor.roles.map((role) => (
-									<p class="rounded-md border px-1.5 text-xl text-muted-foreground">
-										{roleNames[role]}
-									</p>
+									<p class="rounded-md border px-1.5 text-muted-foreground">{roleNames[role]}</p>
 								))}
 							</div>
 						</div>
@@ -105,7 +103,7 @@ const contributors: {
 										href={link.href}
 										target="_blank"
 										rel="noopener noreferrer"
-										class="text-lg text-primary underline-offset-4 hover:underline"
+										class="text-primary underline-offset-4 hover:underline"
 									>
 										{link.label}
 									</a>
