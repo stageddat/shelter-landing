@@ -73,8 +73,8 @@ importers:
         specifier: ^4.1.1
         version: 4.1.1(prettier@3.9.10)(svelte@5.57.2(@typescript-eslint/types@8.71.2))
       prettier-plugin-tailwindcss:
-        specifier: ^0.8.1
-        version: 0.8.1(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.2(@typescript-eslint/types@8.71.2)))(prettier@3.9.10)
+        specifier: 0.0.0-insiders.5b27f94
+        version: 0.0.0-insiders.5b27f94(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.2(@typescript-eslint/types@8.71.2)))(prettier@3.9.10)
       typescript:
         specifier: ^6.0.3
         version: 6.0.3
@@ -1981,8 +1981,8 @@ packages:
       prettier: ^3.0.0
       svelte: ^5.0.0
 
-  prettier-plugin-tailwindcss@0.8.1:
-    resolution: {integrity: sha512-iaFMYqDsE4ffdDkn5qup0j5f2aCEBFZrdrZnvu9QKTlWx/iGPeQ4HHu7b7fCPMxeo9nwQBiOAh2nSypdFYWJkw==}
+  prettier-plugin-tailwindcss@0.0.0-insiders.5b27f94:
+    resolution: {integrity: sha512-1Kcao7i9xkk1FhomIiD4d2emC+RiWVWThC4kpo/tZTkKJvPkhr7e1tkuELU/HSYLaFECmfxIkv+21HEjkkhiYw==}
     engines: {node: '>=20.19'}
     peerDependencies:
       '@ianvs/prettier-plugin-sort-imports': '*'
@@ -4430,7 +4430,7 @@ snapshots:
       prettier: 3.9.10
       svelte: 5.57.2(@typescript-eslint/types@8.71.2)
 
-  prettier-plugin-tailwindcss@0.8.1(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.2(@typescript-eslint/types@8.71.2)))(prettier@3.9.10):
+  prettier-plugin-tailwindcss@0.0.0-insiders.5b27f94(prettier-plugin-astro@1.1.1(@emnapi/core@1.11.3)(@emnapi/runtime@1.11.3)(prettier@3.9.10))(prettier-plugin-svelte@4.1.1(prettier@3.9.10)(svelte@5.57.2(@typescript-eslint/types@8.71.2)))(prettier@3.9.10):
     dependencies:
       prettier: 3.9.10
     optionalDependencies:
