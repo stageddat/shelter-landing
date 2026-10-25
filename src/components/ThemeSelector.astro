@@ -4,10 +4,10 @@
 // selectors there are.
 import { ThemeSelector } from 'shelter-assets';
 
-type Props = { class?: string };
+type Props = { class?: string; align?: 'start' | 'end'; variant?: 'popover' | 'inline' };
 ---
 
-<ThemeSelector class={Astro.props.class} />
+<ThemeSelector class={Astro.props.class} align={Astro.props.align} variant={Astro.props.variant} />
 
 <script>
 	import { initThemeSelectors } from 'shelter-assets';

@@ -1,2 +1,13 @@
 @import 'tailwindcss';
 @import 'shelter-assets/styles.css';
+
+/* que el header sticky no tape el titulo al saltar a #faqs */
+html {
+	scroll-padding-top: 5rem;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+	html {
+		scroll-behavior: smooth;
+	}
+}

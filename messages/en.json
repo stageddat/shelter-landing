@@ -94,6 +94,8 @@
 			"features": "features",
 			"security": "security",
 			"faqs": "faqs",
+			"menu": "menu",
+			"closeMenu": "close menu",
 			"start": "get started"
 		},
 		"footer": {

@@ -1,0 +1,178 @@
+---
+// navbar de todas las paginas. en movil, el ☰ abre un <dialog> a pantalla completa que entra
+// desde la derecha. el navegador hace casi todo (modal, esc, foco); el script de abajo solo
+// lo abre, lo cierra con la ✕ y al pulsar un link
+import Menu from '@lucide/astro/icons/menu';
+import X from '@lucide/astro/icons/x';
+import { getRelativeLocaleUrl } from 'astro:i18n';
+import { Button } from 'shelter-assets';
+import { useTranslations } from '../lib/i18n';
+import { discordUrl, githubUrl, signupUrl } from '../lib/links';
+import { defaultLocale } from '../lib/locales';
+import Discord from './icons/Discord.astro';
+import GitHub from './icons/GitHub.astro';
+import LanguageSelector from './LanguageSelector.astro';
+import ThemeSelector from './ThemeSelector.astro';
+
+const locale = Astro.currentLocale ?? defaultLocale;
+const t = useTranslations(locale);
+const home = getRelativeLocaleUrl(locale, '/');
+
+// /#faqs y no #faqs, para que funcionen tambien desde las paginas legales
+const sections = [
+	{ href: `${home}#features`, label: t('landing.navbar.features') },
+	{ href: `${home}#security`, label: t('landing.navbar.security') },
+	{ href: `${home}#faqs`, label: t('landing.navbar.faqs') }
+];
+const socials = [
+	{ href: githubUrl, label: 'github', icon: GitHub },
+	{ href: discordUrl, label: 'discord', icon: Discord }
+];
+---
+
+<header class="sticky top-0 z-50 w-full border-b border-border/20 bg-background/60 backdrop-blur-xl">
+	<div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
+		<div class="flex items-center gap-4">
+			<a href={home} class="tracking-wide transition-colors hover:text-primary">
+				{t('landing.navbar.logo')}
+			</a>
+
+			<nav class="hidden items-center gap-1 md:flex">
+				{sections.map((section) => (
+					<a
+						href={section.href}
+						class="px-2 text-muted-foreground transition-colors hover:text-primary"
+					>
+						{section.label}
+					</a>
+				))}
+			</nav>
+		</div>
+
+		<div class="flex items-center gap-1.5">
+			<div class="hidden items-center gap-1.5 sm:flex">
+				<LanguageSelector />
+				<ThemeSelector />
+				{socials.map((social) => (
+					<Button
+						href={social.href}
+						target="_blank"
+						rel="noopener noreferrer"
+						variant="ghost"
+						size="icon"
+						aria-label={social.label}
+						title={social.label}
+					>
+						<social.icon class="size-5" />
+					</Button>
+				))}
+			</div>
+			<Button href={signupUrl}>{t('landing.navbar.start')}</Button>
+			<Button
+				variant="outline"
+				size="icon"
+				aria-label={t('landing.navbar.menu')}
+				aria-haspopup="dialog"
+				data-menu-open
+				class="md:hidden"
+			>
+				<Menu aria-hidden="true" />
+			</Button>
+		</div>
+	</div>
+</header>
+
+<dialog
+	id="mobile-menu"
+	aria-label={t('landing.navbar.menu')}
+	class="mobile-menu m-0 h-dvh max-h-none w-full max-w-none border-0 bg-background p-0 text-foreground"
+>
+	<div class="flex h-20 items-center justify-between px-4 sm:px-6">
+		<a href={home} class="tracking-wide">
+			{t('landing.navbar.logo')}
+		</a>
+		<!-- autofocus: al abrir, el foco va a la ✕ -->
+		<Button
+			variant="outline"
+			size="icon"
+			aria-label={t('landing.navbar.closeMenu')}
+			data-menu-close
+			autofocus
+		>
+			<X aria-hidden="true" />
+		</Button>
+	</div>
+
+	<nav class="flex flex-col gap-2 px-8 pt-8">
+		{sections.map((section) => (
+			<a href={section.href} class="py-2 transition-colors hover:text-primary">
+				{section.label}
+			</a>
+		))}
+	</nav>
+
+	<div class="mt-8 flex flex-col gap-6 border-t border-border/40 px-8 pt-8">
+		<div class="flex gap-6 text-muted-foreground">
+			{socials.map((social) => (
+				<a
+					href={social.href}
+					target="_blank"
+					rel="noopener noreferrer"
+					class="flex items-center gap-2 transition-colors hover:text-primary"
+				>
+					<social.icon class="size-5" />
+					{social.label}
+				</a>
+			))}
+		</div>
+		<div class="flex flex-col gap-2">
+			<LanguageSelector variant="inline" />
+			<ThemeSelector variant="inline" />
+		</div>
+		<Button href={signupUrl} size="lg" class="w-full">
+			{t('landing.navbar.start')}
+		</Button>
+	</div>
+</dialog>
+
+<style>
+	/* entra desde la derecha; al cerrar sale igual (donde el navegador lo soporta) */
+	.mobile-menu {
+		inset: 0;
+		translate: 100% 0;
+		transition:
+			translate 0.25s ease-out,
+			display 0.25s allow-discrete,
+			overlay 0.25s allow-discrete;
+	}
+	.mobile-menu[open] {
+		translate: 0 0;
+	}
+	@starting-style {
+		.mobile-menu[open] {
+			translate: 100% 0;
+		}
+	}
+	@media (prefers-reduced-motion: reduce) {
+		.mobile-menu {
+			transition: none;
+		}
+	}
+
+	/* que la pagina de detras no haga scroll mientras esta abierto */
+	:global(html:has(.mobile-menu[open])) {
+		overflow: hidden;
+	}
+</style>
+
+<script>
+	const menu = document.querySelector<HTMLDialogElement>('#mobile-menu');
+
+	document.addEventListener('click', (event) => {
+		const target = event.target instanceof Element ? event.target : null;
+		if (!menu || !target) return;
+		if (target.closest('[data-menu-open]')) menu.showModal();
+		// la ✕, o un link dentro del menu (un link a #faqs no cierra nada solo)
+		else if (target.closest('[data-menu-close], #mobile-menu a')) menu.close();
+	});
+</script>
