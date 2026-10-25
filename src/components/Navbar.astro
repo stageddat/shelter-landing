@@ -33,7 +33,7 @@ const socials = [
 <header class="sticky top-0 z-50 w-full border-b border-border/20 bg-background/60 backdrop-blur-xl">
 	<div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
 		<div class="flex items-center gap-4">
-			<a href={home} class="tracking-wide transition-colors hover:text-primary">
+			<a href={home} class="text-xl font-bold tracking-wide transition-colors hover:text-primary">
 				{t('landing.navbar.logo')}
 			</a>
 
@@ -85,13 +85,10 @@ const socials = [
 <dialog
 	id="mobile-menu"
 	aria-label={t('landing.navbar.menu')}
-	class="mobile-menu m-0 h-dvh max-h-none w-full max-w-none border-0 bg-background p-0 text-foreground"
+	class="mobile-menu m-0 h-dvh max-h-none w-full max-w-none border-0 bg-background px-4 py-0 text-foreground sm:px-6"
 >
-	<div class="flex h-20 items-center justify-between px-4 sm:px-6">
-		<a href={home} class="tracking-wide">
-			{t('landing.navbar.logo')}
-		</a>
-		<!-- autofocus: al abrir, el foco va a la ✕ -->
+	<div class="flex h-20 items-center justify-between">
+		<p class="text-xl font-bold tracking-wide text-muted-foreground">{t('landing.navbar.menu')}</p>
 		<Button
 			variant="outline"
 			size="icon"
@@ -103,7 +100,7 @@ const socials = [
 		</Button>
 	</div>
 
-	<nav class="flex flex-col gap-2 px-8 pt-8">
+	<nav class="flex flex-col gap-2">
 		{sections.map((section) => (
 			<a href={section.href} class="py-2 transition-colors hover:text-primary">
 				{section.label}
@@ -111,8 +108,9 @@ const socials = [
 		))}
 	</nav>
 
-	<div class="mt-8 flex flex-col gap-6 border-t border-border/40 px-8 pt-8">
-		<div class="flex gap-6 text-muted-foreground">
+	<!-- bloques separados por una linea: secciones / redes / ajustes y boton -->
+	<div class="mt-8 flex flex-col divide-y divide-border/40 border-t border-border/40">
+		<div class="flex flex-col gap-4 py-8 text-muted-foreground">
 			{socials.map((social) => (
 				<a
 					href={social.href}
@@ -125,13 +123,15 @@ const socials = [
 				</a>
 			))}
 		</div>
-		<div class="flex flex-col gap-2">
-			<LanguageSelector variant="inline" />
-			<ThemeSelector variant="inline" />
+		<div class="flex flex-col gap-6 py-8">
+			<div class="flex flex-col gap-2">
+				<LanguageSelector variant="inline" />
+				<ThemeSelector variant="inline" />
+			</div>
+			<Button href={signupUrl} size="lg" class="w-full">
+				{t('landing.navbar.start')}
+			</Button>
 		</div>
-		<Button href={signupUrl} size="lg" class="w-full">
-			{t('landing.navbar.start')}
-		</Button>
 	</div>
 </dialog>
 
