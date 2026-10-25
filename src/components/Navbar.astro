@@ -17,6 +17,8 @@ import ThemeSelector from './ThemeSelector.astro';
 const locale = Astro.currentLocale ?? defaultLocale;
 const t = useTranslations(locale);
 const home = getRelativeLocaleUrl(locale, '/');
+// en la home el logo sube arriba del todo sin recargar
+const onHome = Astro.url.pathname.replace(/\/$/, '') === home.replace(/\/$/, '');
 
 // /#faqs y no #faqs, para que funcionen tambien desde las paginas legales
 const sections = [
@@ -33,11 +35,14 @@ const socials = [
 <header class="sticky top-0 z-50 w-full border-b border-border/20 bg-background/60 backdrop-blur-xl">
 	<div class="mx-auto flex h-20 max-w-7xl items-center justify-between gap-4 px-4 sm:px-6">
 		<div class="flex items-center gap-4">
-			<a href={home} class="text-xl font-bold tracking-wide transition-colors hover:text-primary">
+			<a
+				href={onHome ? '#top' : home}
+				class="text-xl font-bold tracking-wide transition-colors hover:text-primary"
+			>
 				{t('landing.navbar.logo')}
 			</a>
 
-			<nav class="hidden items-center gap-1 md:flex">
+			<nav class="hidden items-center gap-1 lg:flex">
 				{sections.map((section) => (
 					<a
 						href={section.href}
@@ -51,8 +56,10 @@ const socials = [
 
 		<div class="flex items-center gap-1.5">
 			<div class="hidden items-center gap-1.5 sm:flex">
-				<LanguageSelector />
-				<ThemeSelector />
+				<div class="hidden items-center gap-1.5 lg:flex">
+					<LanguageSelector />
+					<ThemeSelector />
+				</div>
 				{socials.map((social) => (
 					<Button
 						href={social.href}
@@ -74,7 +81,7 @@ const socials = [
 				aria-label={t('landing.navbar.menu')}
 				aria-haspopup="dialog"
 				data-menu-open
-				class="md:hidden"
+				class="lg:hidden"
 			>
 				<Menu aria-hidden="true" />
 			</Button>
