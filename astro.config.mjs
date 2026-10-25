@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 
+import sitemap from '@astrojs/sitemap';
 import svelte from '@astrojs/svelte';
 import tailwindcss from '@tailwindcss/vite';
 import { defaultLocale, locales } from './src/lib/locales.ts';
@@ -9,7 +10,13 @@ import { defaultLocale, locales } from './src/lib/locales.ts';
 export default defineConfig({
 	site: 'https://shelter.cat',
 
-	integrations: [svelte()],
+	integrations: [
+		svelte(),
+		// /sitemap-index.xml: todas las paginas, cada una con sus versiones en otros idiomas
+		sitemap({
+			i18n: { defaultLocale, locales: Object.fromEntries(locales.map((l) => [l, l])) }
+		})
+	],
 
 	// lista de idiomas en src/lib/locales.ts
 	i18n: {
