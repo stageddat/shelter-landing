@@ -2,7 +2,7 @@
 import { getAbsoluteLocaleUrl } from 'astro:i18n';
 import { BreakpointIndicator, fontInitScript, themeInitScript } from 'shelter-assets';
 import latinFont from 'shelter-assets/fonts/playpen-sans/latin.woff2?url';
-import { pathWithoutLocale } from '../lib/i18n';
+import { pathWithoutLocale, useTranslations } from '../lib/i18n';
 import { defaultLocale, locales } from '../lib/locales';
 import Footer from '../components/sections/Footer.astro';
 import Navbar from '../components/Navbar.astro';
@@ -15,6 +15,10 @@ interface Props {
 
 const { title, description } = Astro.props;
 const path = pathWithoutLocale(Astro.url.pathname);
+const t = useTranslations(Astro.currentLocale);
+const canonical = getAbsoluteLocaleUrl(Astro.currentLocale ?? defaultLocale, path);
+// la misma imagen para todas las paginas e idiomas: solo lleva machka y "shelter"
+const ogImage = new URL('/og.png', Astro.site).href;
 ---
 
 <html lang={Astro.currentLocale}>
@@ -34,11 +38,23 @@ const path = pathWithoutLocale(Astro.url.pathname);
 		<meta name="description" content={description} />
 
 		<!-- decir a gugul que hay mas idiomas -->
-		<link rel="canonical" href={getAbsoluteLocaleUrl(Astro.currentLocale ?? defaultLocale, path)} />
+		<link rel="canonical" href={canonical} />
 		{locales.map((locale) => (
 			<link rel="alternate" hreflang={locale} href={getAbsoluteLocaleUrl(locale, path)} />
 		))}
 		<link rel="alternate" hreflang="x-default" href={getAbsoluteLocaleUrl(defaultLocale, path)} />
+
+		<!-- tarjeta al compartir el link (discord, whatsapp, x...) -->
+		<meta property="og:type" content="website" />
+		<meta property="og:site_name" content="shelter" />
+		<meta property="og:title" content={title} />
+		<meta property="og:description" content={description} />
+		<meta property="og:url" content={canonical} />
+		<meta property="og:image" content={ogImage} />
+		<meta property="og:image:width" content="1200" />
+		<meta property="og:image:height" content="630" />
+		<meta property="og:image:alt" content={t('landing.hero.image_alt')} />
+		<meta name="twitter:card" content="summary_large_image" />
 	</head>
 	<body>
 		<Navbar />
