@@ -2,11 +2,12 @@
 import { Button } from 'shelter-assets';
 import { useTranslations } from '../../lib/i18n';
 import { signupUrl } from '../../lib/links';
+import Section from '../Section.astro';
 
 const t = useTranslations(Astro.currentLocale);
 ---
 
-<section id="start" class="relative overflow-hidden bg-background px-8 py-32 lg:py-52">
+<Section id="start" class="relative overflow-hidden">
 	<div class="mx-auto max-w-4xl text-center">
 		<div class="space-y-6">
 			<h2 class="font-normal text-foreground">{t('landing.start.title')}</h2>
@@ -21,4 +22,4 @@ const t = useTranslations(Astro.currentLocale);
 			</Button>
 		</div>
 	</div>
-</section>
+</Section>

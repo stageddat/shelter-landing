@@ -1,6 +1,7 @@
 ---
 import { useTranslations } from '../../lib/i18n';
 import lockedJournal from '../../assets/locked-journal.svg?url';
+import Section from '../Section.astro';
 
 const t = useTranslations(Astro.currentLocale);
 
@@ -11,9 +12,9 @@ const items = [
 ];
 ---
 
-<section id="security" class="bg-background px-4 py-24 md:px-8 lg:py-40">
+<Section>
 	<div class="mx-auto max-w-6xl">
-		<h2 class="mb-4 text-center text-pretty text-foreground lg:mb-7">
+		<h2 id="security" class="mb-4 text-center text-pretty text-foreground lg:mb-7">
 			{t('landing.security.title')}
 		</h2>
 
@@ -42,7 +43,7 @@ const items = [
 			</div>
 		</div>
 	</div>
-</section>
+</Section>
 
 <script>
 	// <use> no tiene loading="lazy": se descarga el svg solo cuando el dibujo esta cerca de verse

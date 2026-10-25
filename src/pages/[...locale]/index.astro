@@ -21,3 +21,39 @@ const t = useTranslations(Astro.currentLocale);
 		<Start />
 	</main>
 </Layout>
+
+<style>
+	/*
+	 * Escala de la home: todo lo de dentro (texto, h1-h6, espacios, botones) se ve mas grande
+	 * sin poner tamaños a mano. Tailwind lee los tamaños de variables, asi que basta con
+	 * redefinirlas aqui; fuera (navbar, footer, cookies, terms...) sigue la escala normal.
+	 * Las variables las heredan los componentes de dentro, aunque el estilo sea scoped.
+	 */
+	.landing-scale {
+		--scale: 1.0625;
+		--spacing: calc(0.25rem * var(--scale));
+		--text-xs: calc(0.75rem * var(--scale));
+		--text-sm: calc(0.875rem * var(--scale));
+		--text-base: calc(1rem * var(--scale));
+		--text-lg: calc(1.125rem * var(--scale));
+		--text-xl: calc(1.25rem * var(--scale));
+		--text-2xl: calc(1.5rem * var(--scale));
+		--text-3xl: calc(1.875rem * var(--scale));
+		--text-4xl: calc(2.25rem * var(--scale));
+		--text-5xl: calc(3rem * var(--scale));
+		--text-6xl: calc(3.75rem * var(--scale));
+		--text-7xl: calc(4.5rem * var(--scale));
+		--text-8xl: calc(6rem * var(--scale));
+		--text-9xl: calc(8rem * var(--scale));
+		/* los titulos de la app se quedan cortos en una landing: un paso mas grandes */
+		--text-h1: calc(2.75rem * var(--scale));
+		--text-h2: calc(2.25rem * var(--scale));
+		--text-h3: calc(1.5rem * var(--scale));
+		--text-h4: calc(1.25rem * var(--scale));
+		font-size: var(--text-base);
+
+		@media (width >= 64rem) {
+			--scale: 1.125;
+		}
+	}
+</style>

@@ -4,6 +4,7 @@ import CloudSync from '@lucide/astro/icons/cloud-sync';
 import Database from '@lucide/astro/icons/database';
 import { useTranslations } from '../../lib/i18n';
 import FeatureCard from '../FeatureCard.astro';
+import Section from '../Section.astro';
 
 const t = useTranslations(Astro.currentLocale);
 
@@ -22,13 +23,15 @@ const features = [
 ];
 ---
 
-<section id="features" class="relative overflow-hidden bg-background px-4 lg:px-8">
+<Section class="relative overflow-hidden">
 	<div class="mx-auto xl:max-w-10/12">
-		<h2 class="text-center mb-4">{t('landing.features.title')}</h2>
+		<h2 id="features" class="text-center mb-4">
+			{t('landing.features.title')}
+		</h2>
 		<div class="grid grid-cols-1 gap-2 md:grid-cols-2 lg:grid-cols-3 lg:gap-4">
 			{features.map((feature) => (
 				<FeatureCard {...feature} />
 			))}
 		</div>
 	</div>
-</section>
+</Section>
