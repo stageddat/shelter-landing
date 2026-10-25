@@ -248,8 +248,7 @@
 					"hack": "attempt to hack, break, or compromise the security of shelter",
 					"interfere": "interfere with other users' access to the service",
 					"malware": "use shelter to distribute malware or harmful software",
-					"ip": "violate anyone's intellectual property or privacy rights",
-					"superearth": "swear eternal loyalty to Super Earth; any suspicious activity must be reported to your nearest democracy officer"
+					"ip": "violate anyone's intellectual property or privacy rights"
 				}
 			},
 			"availability": {
