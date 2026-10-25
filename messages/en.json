@@ -175,7 +175,7 @@
 			},
 			"contact": {
 				"title": "contact us",
-				"content": "if you have any questions about this privacy policy, please contact us on the <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord server</a>"
+				"content": "if you have any questions about this cookie policy, please contact us on the <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord server</a>"
 			}
 		},
 		"privacy": {
@@ -278,7 +278,7 @@
 			},
 			"contact": {
 				"title": "contact us",
-				"content": "if you have any questions about this privacy policy, please contact us on the <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord server</a>"
+				"content": "if you have any questions about these terms, please contact us on the <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord server</a>"
 			}
 		},
 		"credits": {
@@ -287,13 +287,13 @@
 			"contributors": "contributors",
 			"roles": {
 				"development": "development",
-				"artist": "artist",
-				"tester": "tester",
-				"translator": "translator"
+				"artist": "art",
+				"tester": "testing",
+				"translator": "translation"
 			}
 		},
 		"notFound": {
-			"title": "ups? this page doesn't exist",
+			"title": "oops! this page doesn't exist",
 			"description": "maybe it moved, or the link has a typo.",
 			"home": "back to home"
 		}

@@ -1,100 +1,122 @@
 {
 	"metadata": {
 		"landing": {
-			"title": "shelter - din hyggelige, sikre & open source-dagbog",
-			"description": "skriv dine tanker i et hyggeligt, 100% sikkert personligt rum. dine data forbliver helt private og under din kontrol."
+			"title": "shelter - privat dagbog med end-to-end-kryptering",
+			"description": "en hyggelig open source-dagbog på nettet med end-to-end-kryptering. skriv offline i din browser; kun du kan læse dine indlæg."
 		},
 		"cookies": {
 			"title": "cookiepolitik - shelter",
-			"description": "information om, hvordan shelter bruger cookies og lokal lagring for at holde din session sikker."
+			"description": "information om, hvordan shelter bruger cookies og lokal lagring til at holde din session sikker."
 		},
 		"privacy": {
 			"title": "privatlivspolitik - shelter",
-			"description": "dit privatliv er vores prioritet. læs, hvordan shelter garanterer 100% local-first databeskyttelse og kryptering."
+			"description": "dit privatliv kommer først. læs, hvordan shelter beskytter dine data med kryptering og ved at holde alt på din enhed."
 		},
 		"terms": {
-			"title": "servicevilkår - shelter",
-			"description": "læs vilkårene og betingelserne for at bruge shelter, din open source og private personlige dagbog."
+			"title": "vilkår for brug - shelter",
+			"description": "læs vilkårene for at bruge shelter, din private open source-dagbog."
 		},
 		"credits": {
-			"title": "anerkendelser - shelter",
+			"title": "tak til - shelter",
 			"description": "tak til alle de fantastiske mennesker, der har gjort dette projekt muligt."
+		},
+		"notFound": {
+			"title": "siden blev ikke fundet - shelter",
+			"description": "denne side findes ikke."
 		}
 	},
 	"landing": {
 		"hero": {
 			"title": "shelter",
-			"subtitle": "et sikkert sted, hvor dine tanker kan trække vejret",
-			"image_alt": "machka som skriver hendes journal med hendes kat ziggy"
+			"subtitle": "et trygt sted, hvor dine tanker kan få luft",
+			"tagline": "- en krypteret open source-dagbog, der også virker offline",
+			"image_alt": "machka skriver i sin dagbog sammen med sin kat ziggy",
+			"cta": "begynd at skrive",
+			"secondary_cta": "se hvordan det virker"
 		},
 		"features": {
-			"title": "bygget så du føler dig tryg",
+			"title": "skabt til at føles som hjemme",
 			"1": {
-				"title": "lokal opbevaring & offline-først",
-				"description": "beholder dine journaler sikkert på din egen enhed."
+				"title": "lokal lagring & offline først",
+				"description": "hold dine dagbøger sikre på din egen enhed."
 			},
 			"2": {
-				"title": "cloud sync (kommer snart)",
-				"description": "snart vil du kunne få adgang til dine tanker, hvor du vil."
+				"title": "cloud-synkronisering (kommer snart)",
+				"description": "snart kan du tage dine tanker med dig overalt."
 			},
 			"3": {
-				"title": "skriv i dit eget tempo",
-				"description": "der er ingen deadlines eller pres. bare dig og dine tanker."
+				"title": "ro som udgangspunkt",
+				"description": "ingen deadlines, intet pres. bare et stille sted at skrive, i dit eget tempo."
 			}
 		},
 		"security": {
 			"1": {
 				"title": "dine tanker er dine",
-				"description": "shelter gemmer noter privat i din browser, så du hurtigt kan få adgang til dem, selv offline. ingen andre kan læse dem, ikke engang os."
+				"description": "shelter gemmer dine noter privat i din browser, så du hurtigt kan åbne dem, selv offline. ingen andre kan læse dem, ikke engang os."
 			},
 			"2": {
-				"title": "slut-til-slut krypteret",
-				"description": "dine journaler er slut til slut krypteret og gemt offline først. vi læser, skanner, eller sælger ikke din data. overhovedet."
+				"title": "end-to-end-krypteret",
+				"description": "dine indlæg er end-to-end-krypterede og gemmes først på din enhed. vi læser, scanner eller sælger aldrig dine data. punktum."
 			},
 			"3": {
 				"title": "0 trackere & 0 reklamer",
-				"description": "vi samler aldrig personlig data. der er ingen trackere, ingen reklamer, og ingen gemte analyser som følger dig."
+				"description": "vi indsamler aldrig personlige data. der er ingen trackere eller reklamer, der følger efter dig rundt på nettet."
 			},
-			"title": "helt beskyttet"
+			"title": "helt beskyttet",
+			"image_alt": "en lukket dagbog med en hængelås"
 		},
 		"faqs": {
 			"title": "ofte stillede spørgsmål",
 			"1": {
 				"question": "hvad er shelter?",
-				"answer": "shelter er et sikkert sted, hvor dine tanker kan trække vejret. det er en sikker journal-web-app, hvor du frit kan skrive uden at blive dømt i din yndlingsbrowser."
+				"answer": "shelter er et trygt sted, hvor dine tanker kan få luft. det er en sikker dagbogs-webapp, hvor du frit kan skrive uden at blive dømt, direkte i din yndlingsbrowser."
 			},
 			"2": {
-				"question": "er min data sikker?",
-				"answer": "ja. dine indlæg er slut-til-slut krypteret og gemt lokalt på din enhed først. ingen kan læse dem, ikke engang os. din data er krypteret med en nøgle, som kun du har."
+				"question": "er mine data sikre?",
+				"answer": "ja. dine indlæg er end-to-end-krypterede og gemmes først lokalt på din enhed. ingen kan læse dem, ikke engang os: dine data krypteres med en nøgle, som kun du har."
 			},
 			"3": {
 				"question": "er det open source?",
-				"answer": "ja! du kan finde kildekoden på <a href=\"https://github.com/Stageddat/shelter-web\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">github</a> og vi byder bidrag velkommen."
+				"answer": "ja! du kan finde kildekoden på <a href=\"https://github.com/Stageddat/shelter-web\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">github</a>, og alle bidrag er meget velkomne."
 			},
 			"4": {
-				"question": "hvad er dette projekt inspireret af?",
-				"answer": "dette projekt er inspireret af kommentarsektionen til sangen \"shelter\" af porter robinson & madeon. mange mennesker skriver daglige indlæg der, og vi ville lave et personligt, privat sted for de mindre dele af livet. du kan se videoen <a href=\"https://www.youtube.com/watch?v=HQnC1UHBvWA\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">her</a>!"
+				"question": "hvad er projektet inspireret af?",
+				"answer": "projektet er inspireret af kommentarfeltet under sangen \"shelter\" af porter robinson & madeon. mange mennesker skriver små bidder af deres liv der hver dag, og vi ville skabe et personligt, privat sted til netop det. du kan se videoen <a href=\"https://www.youtube.com/watch?v=HQnC1UHBvWA\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">her</a>!"
 			},
 			"5": {
 				"question": "er det gratis?",
-				"answer": "ja! shelter er gratis at bruge, reklamefri og open source. det er lavet med ❤️!"
+				"answer": "ja! shelter er gratis, reklamefri og open source. lavet med ❤️!"
 			},
 			"6": {
 				"question": "hvem er machka?",
-				"answer": "hun er vores officielle maskot! du kan ofte finde hende og hendes kat ziggy vandre rundt på hjemmesiden.<br /><br /> en særlig tak til <a href=\"https://www.instagram.com/fiddlearty\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">fiddle</a> for at skabe alt det vidunderlige kunstværk!"
+				"answer": "hun er vores officielle maskot! du kan tit møde hende og hendes kat ziggy, når de strejfer rundt på hjemmesiden.<br /><br /> en særlig tak til <a href=\"https://www.instagram.com/fiddlearty\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">fiddle</a> for alle de skønne illustrationer!"
 			}
 		},
 		"start": {
-			"title": "klar til at hvile?",
-			"description": "start din rejse i dit eget tempo.",
-			"button": "start min rejse!"
+			"title": "trænger du til en pause?",
+			"description": "begynd din rejse i dit eget tempo.",
+			"button": "begynd min rejse!"
 		},
 		"navbar": {
 			"logo": "shelter",
 			"features": "funktioner",
 			"security": "sikkerhed",
-			"faqs": "spørgmål",
+			"faqs": "spørgsmål",
+			"menu": "menu",
+			"closeMenu": "luk menu",
 			"start": "kom i gang"
+		},
+		"themeSelector": {
+			"label": "tema",
+			"system": "system",
+			"light": "lyst",
+			"dark": "mørkt",
+			"mocha-lavender": "mokka lavendel"
+		},
+		"languageSelector": {
+			"label": "sprog",
+			"official": "officielle oversættelser",
+			"community": "oversættelser fra fællesskabet"
 		},
 		"footer": {
 			"title": "shelter",
@@ -102,14 +124,14 @@
 			"copyright": "alle rettigheder forbeholdes.",
 			"product": {
 				"title": "produkt",
-				"credits": "anerkendelser",
+				"credits": "tak til",
 				"cloud": "cloud",
-				"selfhost": "selv-host"
+				"selfhost": "selvhosting"
 			},
 			"legal": {
 				"title": "juridisk",
 				"privacy": "privatlivspolitik",
-				"terms": "servicevilkår",
+				"terms": "vilkår for brug",
 				"cookies": "cookiepolitik"
 			},
 			"contact": {
@@ -120,103 +142,103 @@
 			"title": "cookiepolitik",
 			"lastUpdated": "sidst opdateret: 18. juni 2026",
 			"whatAreCookies": {
-				"title": "hvad er cookies",
-				"content": "cookies er små tekstfiler, som hjemmesider gemmer på din enhed for at huske information om dig. de er en standarddel af, hvordan moderne hjemmesider fungerer."
+				"title": "hvad er cookies?",
+				"content": "cookies er små tekstfiler, som hjemmesider gemmer på din enhed for at huske oplysninger om dig. de er en helt almindelig del af, hvordan moderne hjemmesider fungerer."
 			},
 			"ourApproach": {
-				"title": "vores tilgang til cookies",
-				"content": "shelter bruger ikke cookies. der er ingen konto- eller loginsystem, så der er intet at huske mellem besøg ud over det, der allerede er gemt lokalt i din browser."
+				"title": "sådan bruger vi cookies",
+				"content": "shelter bruger ikke cookies. der er ingen konto eller login, så der er intet at huske mellem dine besøg ud over det, der allerede er gemt lokalt i din browser."
 			},
 			"whatWeDontUse": {
-				"title": "hvad vi ikke bruger",
+				"title": "det bruger vi ikke",
 				"intro": "shelter bruger ikke:",
 				"items": {
 					"tracking": "cookies til at spore din adfærd",
 					"advertising": "reklamecookies til at vise dig annoncer",
-					"analytics": "analysecookies til at indsamle brugsstatistikker",
+					"analytics": "statistikcookies til at indsamle brugsdata",
 					"thirdParty": "tredjepartscookies fra sociale medier eller andre tjenester",
 					"personal": "cookies, der identificerer dig personligt"
 				}
 			},
 			"localStorage": {
-				"title": "lokal opbevaring",
-				"content1": "i stedet for cookies bruger shelter din browsers lokale lagring til at gemme dine krypterede indlæg på din enhed. dette er ikke det samme som cookies, det er det, der giver dig offline adgang til dit indhold, og det forlader aldrig din enhed.",
-				"content2": "alt, der er gemt lokalt, er krypteret og kun tilgængeligt for dig."
+				"title": "lokal lagring",
+				"content1": "i stedet for cookies bruger shelter din browsers lokale lagring til at gemme dine krypterede indlæg på din enhed. det er ikke det samme som cookies: det er det, der giver dig adgang til dit indhold offline, og det forlader aldrig din enhed.",
+				"content2": "alt, der gemmes lokalt, er krypteret og kun tilgængeligt for dig."
 			},
 			"futureSync": {
-				"title": "fremtid: synkronisering med skyen",
-				"content": "vi arbejder på en valgfri cloud-synkroniseringsfunktion, som muligvis vil introducere et lille antal nødvendige cookies (for eksempel for at holde dig logget ind). hvis det ændrer sig, opdaterer vi denne politik med fulde detaljer, før funktionen går live."
+				"title": "i fremtiden: cloud-synkronisering",
+				"content": "vi arbejder på en valgfri cloud-synkronisering, som måske kræver nogle få nødvendige cookies (for eksempel for at holde dig logget ind). hvis det ændrer sig, opdaterer vi denne politik med alle detaljer, før funktionen bliver tilgængelig."
 			},
 			"updates": {
-				"title": "opdateringer til denne politik",
-				"content": "hvis vi nogensinde får brug for at tilføje eller ændre de cookies, vi bruger, opdaterer vi denne politik og giver dig besked. vi er forpligtet til at holde cookieforbruget på et absolut minimum."
+				"title": "ændringer i denne politik",
+				"content": "hvis vi nogensinde skal tilføje eller ændre de cookies, vi bruger, opdaterer vi denne politik og giver dig besked. vi holder brugen af cookies på et absolut minimum."
 			},
 			"contact": {
 				"title": "kontakt os",
-				"content": "hvis du har spørgsmål om denne privatlivspolitik, bedes du kontakte os på <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord-serveren</a>"
+				"content": "hvis du har spørgsmål om denne cookiepolitik, så skriv til os på <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord-serveren</a>"
 			}
 		},
 		"privacy": {
 			"title": "privatlivspolitik",
 			"lastUpdated": "sidst opdateret: 18. juni 2026",
 			"noCollect": {
-				"title": "vi indsamler ikke din data",
-				"content": "shelter er bygget på et simpelt princip: dine tanker er dine. shelter kører udelukkende i din browser, vi indsamler, gemmer eller behandler ikke dine personlige data på nogen server. alt, hvad du skriver, bliver på din enhed."
+				"title": "vi indsamler ikke dine data",
+				"content": "shelter bygger på et enkelt princip: dine tanker er dine. shelter kører udelukkende i din browser: vi indsamler, gemmer eller behandler ikke dine personlige data på nogen server. alt, hvad du skriver, bliver på din enhed."
 			},
 			"storage": {
-				"title": "hvordan din data gemmes",
-				"intro": "alle dine indlæg gemmes lokalt i din browser ved hjælp af krypteret lagring. dette betyder:",
+				"title": "sådan gemmes dine data",
+				"intro": "alle dine indlæg gemmes lokalt i din browser i krypteret lagring. det betyder, at:",
 				"items": {
 					"device": "dine noter forlader aldrig din enhed",
-					"read": "vi kan ikke læse dine indlæg, selvom vi ville",
-					"encrypted": "din data er krypteret, når den ligger stille, med en nøgle som kun du har",
+					"read": "vi kan ikke læse dine indlæg, selv hvis vi ville",
+					"encrypted": "dine data er krypteret, når de er gemt, med en nøgle som kun du har",
 					"control": "du har fuld kontrol over dine oplysninger"
 				}
 			},
 			"analytics": {
-				"title": "analyse",
-				"content": "vi bruger selv-hostet, privatlivsrespekterende analyse (umami) til at forstå, hvordan shelter bruges samlet set — ting som sidevisninger og generelle brugstendenser. disse data er anonymiserede, aldrig knyttet til din identitet eller dine journalindlæg, og bliver aldrig delt eller solgt til nogen. du kan fravælge dette når som helst."
+				"title": "statistik",
+				"content": "vi bruger selvhostet, privatlivsvenlig statistik (umami) til at forstå, hvordan shelter bruges samlet set, for eksempel sidevisninger og generelle brugstendenser. disse data er anonymiserede, bliver aldrig koblet til din identitet eller dine dagbogsindlæg og bliver aldrig delt med eller solgt til nogen. du kan til enhver tid fravælge det."
 			},
 			"noAds": {
 				"title": "ingen reklamer, intet salg af data",
-				"content": "vi vil aldrig vise reklamer eller sælge din data til tredjeparter. nogensinde. dit privatliv er ikke til salg."
+				"content": "vi vil aldrig vise reklamer eller sælge dine data til tredjeparter. aldrig. dit privatliv er ikke til salg."
 			},
 			"cookies": {
 				"title": "cookies",
-				"content": "shelter bruger ikke cookies. der er intet konto- eller loginsystem, så der er intet at huske mellem sessioner ud over det, der allerede er gemt lokalt i din browser. se vores <a class=\"text-primary-dark hover:text-primary-dark/80 transition-colors\" href=\"/cookies\">cookiepolitik</a> for flere detaljer."
+				"content": "shelter bruger ikke cookies. der er ingen konto eller login, så der er intet at huske mellem sessioner ud over det, der allerede er gemt lokalt i din browser. se vores <a class=\"text-primary-dark hover:text-primary-dark/80 transition-colors\" href=\"/da/cookies\">cookiepolitik</a> for flere detaljer."
 			},
 			"rights": {
 				"title": "dine rettigheder",
-				"content": "eftersom vi ikke indsamler din data, er der intet for os at slette eller dele fra vores side. du har fuldt ejerskab og kontrol over alt, hvad du opretter i shelter, og du kan til enhver tid eksportere eller slette din data direkte fra appen."
+				"content": "da vi ikke indsamler dine data, er der intet for os at slette eller dele. alt, hvad du skaber i shelter, er dit og under din kontrol, og du kan til enhver tid eksportere eller slette dine data direkte i appen."
 			},
 			"futureSync": {
-				"title": "fremtid: cloud sync",
-				"content": "vi arbejder på en valgfri cloud-synkroniseringsfunktion. når den lanceres, vil din data blive krypteret på din enhed, før den overhovedet når vores servere, og kun du vil have nøglerne til at dekryptere den. vi opdaterer denne politik med fulde detaljer, før den funktion går live."
+				"title": "i fremtiden: cloud-synkronisering",
+				"content": "vi arbejder på en valgfri cloud-synkronisering. når den lanceres, bliver dine data krypteret på din enhed, før de overhovedet når vores servere, og kun du har nøglerne til at dekryptere dem. vi opdaterer denne politik med alle detaljer, før funktionen bliver tilgængelig."
 			},
 			"changes": {
-				"title": "ændringer til denne politik",
-				"content": "hvis vi nogensinde ændrer denne privatlivspolitik, vil vi give dig tydelig besked og give dig mulighed for at gennemse ændringerne. vi vil aldrig foretage ændringer, der kompromitterer dit privatliv uden dit vidende."
+				"title": "ændringer i denne politik",
+				"content": "hvis vi nogensinde ændrer denne privatlivspolitik, giver vi dig tydelig besked og mulighed for at gennemse ændringerne. vi vil aldrig lave ændringer, der går ud over dit privatliv, uden at du ved det."
 			},
 			"contact": {
 				"title": "kontakt os",
-				"content": "hvis du har spørgsmål om denne privatlivspolitik, bedes du kontakte os på <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord-serveren</a>"
+				"content": "hvis du har spørgsmål om denne privatlivspolitik, så skriv til os på <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord-serveren</a>"
 			}
 		},
 		"terms": {
-			"title": "servicevilkår",
+			"title": "vilkår for brug",
 			"lastUpdated": "sidst opdateret: 18. juni 2026",
 			"welcome": {
 				"title": "velkommen til shelter!",
-				"content": "ved at bruge shelter accepterer du disse vilkår. vi har holdt dem enkle og ligefremme, fordi vi tror på gennemsigtighed."
+				"content": "når du bruger shelter, accepterer du disse vilkår. vi har holdt dem enkle og ligetil, fordi vi tror på åbenhed."
 			},
 			"whatIs": {
 				"title": "hvad shelter er",
-				"content": "shelter er et privat, krypteret rum til dine tanker, noter og refleksioner. det er designet til at være et sikkert sted, hvor du frit kan skrive uden dom eller overvågning. shelter kører i øjeblikket udelukkende i din browser — der kræves ingen konto eller login."
+				"content": "shelter er et privat, krypteret sted til dine tanker, noter og refleksioner. det er lavet til at være et trygt sted, hvor du kan skrive frit uden at blive dømt eller overvåget. shelter kører i øjeblikket udelukkende i din browser: du behøver hverken konto eller login."
 			},
 			"yourContent": {
 				"title": "dit indhold",
-				"content1": "alt, hvad du skriver i shelter, tilhører dig. vi gør ikke krav på ejerskab over dit indhold. da din data er krypteret og gemt på din egen enhed, kan vi alligevel ikke få adgang til den.",
-				"content2": "du er ansvarlig for det indhold, du opretter. selvom vi ikke kan se dine indlæg, beder vi dig bruge shelter ansvarligt og lovligt."
+				"content1": "alt, hvad du skriver i shelter, tilhører dig. vi gør ikke krav på noget af dit indhold. og da dine data er krypteret og gemt på din egen enhed, kan vi alligevel ikke få adgang til dem.",
+				"content2": "du er ansvarlig for det indhold, du skaber. selvom vi ikke kan se dine indlæg, beder vi dig bruge shelter ansvarligt og lovligt."
 			},
 			"acceptableUse": {
 				"title": "acceptabel brug",
@@ -224,52 +246,56 @@
 				"items": {
 					"illegal": "bruge shelter til ulovlige aktiviteter",
 					"hack": "forsøge at hacke, bryde eller kompromittere sikkerheden i shelter",
-					"interfere": "forstyrre andre brugeres adgang til tjenesten",
-					"malware": "bruge shelter til at distribuere malware eller skadelig software",
-					"ip": "krænke nogens intellektuelle ejendomsret eller privatlivsrettigheder",
-					"superearth": "sværge evig troskab til Super Earth; enhver mistænkelig aktivitet skal indberettes til din nærmeste demokratiofficer"
+					"interfere": "forhindre andre i at bruge tjenesten",
+					"malware": "bruge shelter til at sprede malware eller skadelig software",
+					"ip": "krænke andres immaterielle rettigheder eller privatliv"
 				}
 			},
 			"availability": {
 				"title": "tjenestens tilgængelighed",
-				"content1": "vi arbejder hårdt på at holde shelter kørende uden problemer, ale vi kan ikke garantere, at hjemmesiden vil være tilgængelig 100% af tiden. vi kan have brug for at tage den ned til vedligeholdelse eller opdateringer lejlighedsvis.",
-				"content2": "da din data gemmes lokalt på din enhed, forbliver dine indlæg tilgængelige for dig, selvom shelters hjemmeside midlertidigt er nede."
+				"content1": "vi gør os umage for, at shelter kører stabilt, men vi kan ikke garantere, at hjemmesiden er tilgængelig 100% af tiden. af og til kan vi have brug for at lukke den ned for vedligeholdelse eller opdateringer.",
+				"content2": "da dine data gemmes lokalt på din enhed, har du stadig adgang til dine indlæg, selv hvis shelters hjemmeside midlertidigt er nede."
 			},
 			"backups": {
-				"title": "backups",
-				"content": "dine indlæg lever på din enhed. vi anbefaler på det kraftigste, at du regelmæssigt eksporterer dine indlæg som en backup — hvis du mister adgangen til din enhed eller rydder din browsers data uden en backup, har vi ingen mulighed for at gendanne dine indlæg. du er ansvarlig for at vedligeholde dine egne backups af vigtigt indhold."
+				"title": "backup",
+				"content": "dine indlæg bor på din enhed. vi anbefaler kraftigt, at du jævnligt eksporterer dine indlæg som backup: hvis du mister adgangen til din enhed eller rydder dine browserdata uden en backup, har vi ingen mulighed for at gendanne dine indlæg. du er selv ansvarlig for at tage backup af vigtigt indhold."
 			},
 			"noWarranty": {
 				"title": "ingen garanti",
-				"content": "shelter leveres \"som beset\" uden garantier af nogen art. vi gør vores bedste for at gøre shelter pålidelig og sikker, men vi kan ikke garantere, at den vil opfylde alle dine behov eller være helt fejlfri."
+				"content": "shelter leveres \"som det er\" uden garantier af nogen art. vi gør vores bedste for, at shelter er pålidelig og sikker, men vi kan ikke garantere, at den opfylder alle dine behov eller er helt fejlfri."
 			},
 			"liability": {
 				"title": "ansvarsbegrænsning",
-				"content": "vi er ikke ansvarlige for eventuelle skader, der skyldes brug eller manglende evne til at bruge shelter. dette inkluderer datatab, selvom vi arbejder hårdt på at forhindre det."
+				"content": "vi er ikke ansvarlige for skader, der opstår ved brug af shelter eller ved ikke at kunne bruge den. det gælder også datatab, selvom vi gør meget for at undgå det."
 			},
 			"futureSync": {
-				"title": "fremtid: konti og cloud sync",
-				"content": "vi arbejder på en valgfri cloud-synkroniseringsfunktion, som vil introducere konti. når det lanceres, vil du være ansvarlig for at holde din konto sikker, og vi opdaterer disse vilkår med fulde detaljer om konti, synkroniseret data og opsigelse, før den funktion går live."
+				"title": "i fremtiden: konti og cloud-synkronisering",
+				"content": "vi arbejder på en valgfri cloud-synkronisering, som vil indføre konti. når den lanceres, er du ansvarlig for at holde din konto sikker, og vi opdaterer disse vilkår med alle detaljer om konti, synkroniserede data og opsigelse, før funktionen bliver tilgængelig."
 			},
 			"changes": {
-				"title": "ændringer af disse vilkår",
-				"content": "vi kan opdatere disse vilkår fra tid til anden. hvis vi foretager væsentlige ændringer, vil vi give dig tydelig besked og give dig tid til at gennemse dem. fortsat brug af shelter efter ændringer betyder, at du accepterer de nye vilkår."
+				"title": "ændringer i disse vilkår",
+				"content": "vi kan opdatere disse vilkår fra tid til anden. hvis vi laver væsentlige ændringer, giver vi dig tydelig besked og tid til at gennemse dem. hvis du fortsætter med at bruge shelter efter ændringerne, accepterer du de nye vilkår."
 			},
 			"contact": {
 				"title": "kontakt os",
-				"content": "hvis du har spørgsmål om denne privatlivspolitik, bedes du kontakte os på <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord-serveren</a>"
+				"content": "hvis du har spørgsmål om disse vilkår, så skriv til os på <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord-serveren</a>"
 			}
 		},
 		"credits": {
-			"title": "anerkendelser",
-			"intro": "tak til alle, der har støttet shelter på den ene eller anden måde, enten med kode, design, feedback eller bare ved at bruge den. dette projekt ville ikke være, hvad det er uden dig <3",
-			"contributors": "bidragsydere",
+			"title": "tak til",
+			"intro": "tak til alle, der har støttet shelter på den ene eller anden måde, hvad enten det er med kode, design, feedback eller bare ved at bruge den. projektet ville ikke være det, det er, uden jer <3",
+			"contributors": "bidragydere",
 			"roles": {
 				"development": "udvikling",
-				"artist": "kunstner",
-				"tester": "tester",
-				"translator": "oversætter"
+				"artist": "kunst",
+				"tester": "test",
+				"translator": "oversættelse"
 			}
+		},
+		"notFound": {
+			"title": "ups! denne side findes ikke",
+			"description": "måske er den flyttet, eller også er der en tastefejl i linket.",
+			"home": "tilbage til forsiden"
 		}
 	}
 }

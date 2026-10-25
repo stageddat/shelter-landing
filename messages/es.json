@@ -1,100 +1,122 @@
 {
 	"metadata": {
 		"landing": {
-			"title": "shelter - tu diario íntimo, seguro y de código abierto",
-			"description": "escribe tus pensamientos en un espacio personal íntimo y 100% seguro. tus datos se mantienen completamente privados y bajo tu control."
+			"title": "shelter - diario privado con cifrado de extremo a extremo",
+			"description": "un diario online acogedor y de código abierto, con cifrado de extremo a extremo. escribe sin conexión desde tu navegador; solo tú puedes leer tus entradas."
 		},
 		"cookies": {
 			"title": "política de cookies - shelter",
-			"description": "información sobre cómo shelter utiliza las cookies y el almacenamiento local para mantener tu sesión segura."
+			"description": "información sobre cómo shelter usa las cookies y el almacenamiento local para mantener tu sesión segura."
 		},
 		"privacy": {
 			"title": "política de privacidad - shelter",
-			"description": "tu privacidad es nuestra prioridad. lee cómo shelter garantiza una protección de datos y cifrado 100% local-first."
+			"description": "tu privacidad es lo primero. descubre cómo shelter protege tus datos con cifrado y guardándolo todo en tu dispositivo."
 		},
 		"terms": {
-			"title": "términos de servicio - shelter",
-			"description": "lee los términos y condiciones para usar shelter, tu diario personal privado y de código abierto."
+			"title": "términos del servicio - shelter",
+			"description": "lee los términos y condiciones de uso de shelter, tu diario personal, privado y de código abierto."
 		},
 		"credits": {
 			"title": "créditos - shelter",
 			"description": "gracias a todas las personas increíbles que han hecho posible este proyecto."
+		},
+		"notFound": {
+			"title": "página no encontrada - shelter",
+			"description": "esta página no existe."
 		}
 	},
 	"landing": {
 		"hero": {
 			"title": "shelter",
-			"subtitle": "un espacio seguro donde tus pensamientos pueden respiran en libertad",
-			"image_alt": "machka escribiendo en su diario con su gatito ziggy"
+			"subtitle": "un lugar seguro donde tus pensamientos pueden respirar",
+			"tagline": "- un diario cifrado y de código abierto que funciona sin conexión",
+			"image_alt": "machka escribiendo en su diario junto a su gatito ziggy",
+			"cta": "empieza a escribir",
+			"secondary_cta": "descubre cómo funciona"
 		},
 		"features": {
+			"title": "hecho para que te sientas como en casa",
 			"1": {
 				"title": "almacenamiento local y sin conexión",
-				"description": "guarda tus diarios de forma segura en tu propio dispositivo."
+				"description": "guarda tus diarios a salvo en tu propio dispositivo."
 			},
 			"2": {
 				"title": "sincronización en la nube (próximamente)",
-				"description": "pronto podrás acceder a tus pensamientos desde cualquier lugar."
+				"description": "pronto podrás llevar tus pensamientos contigo a cualquier parte."
 			},
 			"3": {
-				"title": "diseñado para transmitir tranquilidad",
-				"description": "sin plazos de entrega, sin presiones. simplemente un espacio tranquilo para escribir, a tu propio ritmo."
-			},
-			"title": "hecho para que te sientas como en casa"
+				"title": "tranquilo por naturaleza",
+				"description": "sin fechas límite ni presiones. solo un rincón tranquilo para escribir, a tu ritmo."
+			}
 		},
 		"security": {
 			"1": {
 				"title": "tus pensamientos son tuyos",
-				"description": "shelter guarda las notas de forma privada en tu navegador, para que puedas acceder a ellas rápidamente, incluso sin conexión. nadie más puede leerlas, ni siquiera nosotros."
+				"description": "shelter guarda tus notas de forma privada en tu navegador, así que puedes abrirlas al momento, incluso sin conexión. nadie más puede leerlas, ni siquiera nosotros."
 			},
 			"2": {
 				"title": "cifrado de extremo a extremo",
-				"description": "tus datos se cifran de extremo a extremo y se almacenan sin conexión. nunca leemos, escaneamos ni vendemos tus datos."
+				"description": "tus entradas se cifran de extremo a extremo y se guardan primero en tu dispositivo. nunca leemos, analizamos ni vendemos tus datos. y punto."
 			},
 			"3": {
 				"title": "0 rastreadores y 0 anuncios",
-				"description": "jamás recopilamos datos personales. no hay rastreadores ni anuncios que te sigan."
+				"description": "no recopilamos datos personales, nunca. no hay rastreadores ni anuncios persiguiéndote por internet."
 			},
-			"title": "totalmente protegido"
+			"title": "totalmente protegido",
+			"image_alt": "un diario cerrado con un candado"
 		},
 		"faqs": {
+			"title": "preguntas frecuentes",
 			"1": {
 				"question": "¿qué es shelter?",
-				"answer": "shelter es un lugar seguro donde tus pensamientos pueden respirar. es una aplicación web de diario segura donde puedes escribir libremente sin presión en tu navegador favorito."
+				"answer": "shelter es un lugar seguro donde tus pensamientos pueden respirar. es una aplicación web de diario, segura, donde puedes escribir con libertad y sin juicios desde tu navegador favorito."
 			},
 			"2": {
 				"question": "¿mis datos están seguros?",
-				"answer": "sí. tus entradas están cifradas de extremo a extremo y se almacenan primero localmente en tu dispositivo. nadie puede leerlas, ni siquiera nosotros. tus datos están cifrados con una clave que solo tú posees."
+				"answer": "sí. tus entradas se cifran de extremo a extremo y se guardan primero en tu propio dispositivo. nadie puede leerlas, ni siquiera nosotros: tus datos se cifran con una clave que solo tienes tú."
 			},
 			"3": {
 				"question": "¿es de código abierto?",
-				"answer": "¡sí! puedes encontrar el código fuente en <a href=\"https://github.com/Stageddat/shelter-web\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">github</a> y agradecemos las contribuciones."
+				"answer": "¡sí! puedes ver el código fuente en <a href=\"https://github.com/Stageddat/shelter-web\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">github</a>, y las contribuciones son más que bienvenidas."
 			},
-			"title": "preguntas frecuentes",
 			"4": {
 				"question": "¿en qué se inspira este proyecto?",
-				"answer": "este proyecto está inspirado en la sección de comentarios de la canción \"shelter\" de porter robinson & madeon. mucha gente escribe allí a diario, y queríamos crear un espacio personal y privado para esos pequeños fragmentos de vida. ¡Puedes ver el vídeo <a href=\"https://www.youtube.com/watch?v=HQnC1UHBvWA\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">aquí</a>!"
+				"answer": "este proyecto se inspira en los comentarios de la canción \"shelter\" de porter robinson y madeon. mucha gente escribe allí cada día pequeños trocitos de su vida, y quisimos crear un espacio personal y privado para ellos. ¡puedes ver el vídeo <a href=\"https://www.youtube.com/watch?v=HQnC1UHBvWA\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">aquí</a>!"
 			},
 			"5": {
 				"question": "¿es gratis?",
-				"answer": "¡sí! shelter es de uso gratuito, sin anuncios y de código abierto. ¡hecho con ❤️!"
+				"answer": "¡sí! shelter es gratis, sin anuncios y de código abierto. ¡hecho con ❤️!"
 			},
 			"6": {
 				"question": "¿quién es machka?",
-				"answer": "¡ella es nuestra mascota oficial! a menudo la puedes encontrar a ella y a su gatito ziggy paseando por el sitio web.<br /><br /> ¡muchísimas gracias a <a href=\"https://www.instagram.com/fiddlearty\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">fiddle</a> por crear todas las maravillosas ilustraciones!"
+				"answer": "¡es nuestra mascota oficial! a menudo la verás paseando por la web con su gatito ziggy.<br /><br /> ¡muchísimas gracias a <a href=\"https://www.instagram.com/fiddlearty\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">fiddle</a> por crear todas estas ilustraciones tan bonitas!"
 			}
 		},
 		"start": {
-			"title": "¿listo para descansar?",
-			"description": "comienza tu viaje a tu propio ritmo.",
+			"title": "¿te apetece descansar?",
+			"description": "empieza tu viaje a tu ritmo.",
 			"button": "¡empezar mi viaje!"
 		},
 		"navbar": {
 			"logo": "shelter",
-			"features": "características",
+			"features": "funciones",
 			"security": "seguridad",
 			"faqs": "preguntas",
+			"menu": "menú",
+			"closeMenu": "cerrar menú",
 			"start": "empezar"
+		},
+		"themeSelector": {
+			"label": "tema",
+			"system": "sistema",
+			"light": "claro",
+			"dark": "oscuro",
+			"mocha-lavender": "mocha lavanda"
+		},
+		"languageSelector": {
+			"label": "idioma",
+			"official": "traducciones oficiales",
+			"community": "traducciones de la comunidad"
 		},
 		"footer": {
 			"title": "shelter",
@@ -109,7 +131,7 @@
 			"legal": {
 				"title": "legal",
 				"privacy": "política de privacidad",
-				"terms": "términos de servicio",
+				"terms": "términos del servicio",
 				"cookies": "política de cookies"
 			},
 			"contact": {
@@ -121,39 +143,39 @@
 			"lastUpdated": "última actualización: 18 de junio de 2026",
 			"whatAreCookies": {
 				"title": "qué son las cookies",
-				"content": "las cookies son pequeños archivos de texto que los sitios web almacenan en tu dispositivo para recordar información sobre ti. son una parte estándar del funcionamiento de los sitios web modernos."
+				"content": "las cookies son pequeños archivos de texto que las webs guardan en tu dispositivo para recordar información sobre ti. son una parte habitual de cómo funcionan las webs hoy en día."
 			},
 			"ourApproach": {
-				"title": "nuestro enfoque respecto a las cookies",
-				"content": "shelter no utiliza cookies. no hay sistema de cuenta ni de inicio de sesión, por lo que no hay nada que recordar entre visitas más allá de lo que ya está almacenado localmente en tu navegador."
+				"title": "cómo usamos las cookies",
+				"content": "shelter no usa cookies. no hay cuentas ni inicio de sesión, así que no hay nada que recordar entre visitas más allá de lo que ya se guarda localmente en tu navegador."
 			},
 			"whatWeDontUse": {
 				"title": "lo que no usamos",
-				"intro": "shelter no utiliza:",
+				"intro": "shelter no usa:",
 				"items": {
-					"tracking": "cookies para rastrear tu comportamiento",
+					"tracking": "cookies para rastrear lo que haces",
 					"advertising": "cookies publicitarias para mostrarte anuncios",
 					"analytics": "cookies analíticas para recopilar estadísticas de uso",
-					"thirdParty": "cookies de terceros de redes sociales u otros servicios",
-					"personal": "cookies que te identifican personalmente"
+					"thirdParty": "cookies de terceros, de redes sociales u otros servicios",
+					"personal": "cookies que te identifiquen personalmente"
 				}
 			},
 			"localStorage": {
 				"title": "almacenamiento local",
-				"content1": "en lugar de cookies, shelter utiliza el almacenamiento local de tu navegador para guardar tus entradas cifradas en tu dispositivo. esto no es lo mismo que las cookies; es lo que te permite acceder a tu contenido sin conexión y nunca sale de tu dispositivo.",
-				"content2": "todo lo que se almacena localmente está cifrado y solo tú puedes acceder a ello."
+				"content1": "en lugar de cookies, shelter usa el almacenamiento local de tu navegador para guardar tus entradas cifradas en tu dispositivo. no es lo mismo que una cookie: es lo que te permite acceder a tu contenido sin conexión, y nunca sale de tu dispositivo.",
+				"content2": "todo lo que se guarda localmente está cifrado y solo tú puedes acceder a ello."
 			},
 			"futureSync": {
-				"title": "futuro: sincronización en la nube",
-				"content": "estamos trabajando en una función opcional de sincronización en la nube, que podría introducir algunas cookies esenciales (por ejemplo, para mantener tu sesión iniciada). si esto cambia, actualizaremos esta política con todos los detalles antes de que la función esté disponible."
+				"title": "en el futuro: sincronización en la nube",
+				"content": "estamos trabajando en una función opcional de sincronización en la nube, que podría necesitar unas pocas cookies esenciales (por ejemplo, para mantener tu sesión iniciada). si eso cambia, actualizaremos esta política con todos los detalles antes de que la función esté disponible."
 			},
 			"updates": {
-				"title": "actualizaciones de esta política",
-				"content": "si en algún momento necesitamos añadir o modificar las cookies que utilizamos, actualizaremos esta política y se lo comunicaremos. nos comprometemos a reducir al mínimo el uso de cookies."
+				"title": "cambios en esta política",
+				"content": "si alguna vez necesitamos añadir o cambiar las cookies que usamos, actualizaremos esta política y te avisaremos. nos comprometemos a usar las mínimas cookies posibles."
 			},
 			"contact": {
-				"title": "contacta con nosotros",
-				"content": "si tiene alguna pregunta sobre esta política de privacidad, póngase en contacto con nosotros en el <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">servidor de discord</a>"
+				"title": "contacto",
+				"content": "si tienes cualquier pregunta sobre esta política de cookies, escríbenos en el <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">servidor de discord</a>"
 			}
 		},
 		"privacy": {
@@ -161,115 +183,119 @@
 			"lastUpdated": "última actualización: 18 de junio de 2026",
 			"noCollect": {
 				"title": "no recopilamos tus datos",
-				"content": "shelter se basa en un principio simple: tus pensamientos son tuyos. shelter se ejecuta completamente en tu navegador, no recopilamos, almacenamos ni procesamos tus datos personales en ningún servidor. todo lo que escribes se queda en tu dispositivo."
+				"content": "shelter se basa en una idea sencilla: tus pensamientos son tuyos. shelter funciona por completo en tu navegador: no recopilamos, guardamos ni procesamos tus datos personales en ningún servidor. todo lo que escribes se queda en tu dispositivo."
 			},
 			"storage": {
-				"title": "cómo se almacenan tus datos",
-				"intro": "todas tus entradas se almacenan localmente en tu navegador mediante almacenamiento cifrado. esto significa:",
+				"title": "cómo se guardan tus datos",
+				"intro": "todas tus entradas se guardan localmente en tu navegador, en un almacenamiento cifrado. esto significa que:",
 				"items": {
 					"device": "tus notas nunca salen de tu dispositivo",
-					"read": "no podemos leer tus entradas, aunque quisiéramos",
-					"encrypted": "tus datos están cifrados en reposo con una clave que solo tú tienes",
-					"control": "tienes un control completo sobre tu información"
+					"read": "no podemos leer tus entradas, ni aunque quisiéramos",
+					"encrypted": "tus datos están cifrados en reposo con una clave que solo tienes tú",
+					"control": "tienes el control total de tu información"
 				}
 			},
 			"analytics": {
 				"title": "analítica",
-				"content": "utilizamos analítica autohospedada y respetuosa con la privacidad (umami) para entender cómo se utiliza shelter de manera agregada — cosas como las visualizaciones de página y las tendencias generales de uso. estos datos son anónimos, nunca se vinculan a tu identidad o tus entradas del diario, y jamás se comparten ni se venden a nadie. puedes desactivarlo en cualquier momento."
+				"content": "usamos una analítica autoalojada y respetuosa con la privacidad (umami) para entender cómo se usa shelter en conjunto, como las visitas a cada página y las tendencias generales de uso. estos datos son anónimos, nunca se vinculan a tu identidad ni a tus entradas, y nunca se comparten ni se venden a nadie. puedes desactivarla cuando quieras."
 			},
 			"noAds": {
-				"title": "sin anuncios, sin vender datos",
+				"title": "sin anuncios ni venta de datos",
 				"content": "nunca mostraremos anuncios ni venderemos tus datos a terceros. jamás. tu privacidad no está en venta."
 			},
 			"cookies": {
 				"title": "cookies",
-				"content": "shelter no utiliza cookies. no hay ningún sistema de cuentas ni de inicio de sesión, así que no hay nada que recordar entre sesiones más allá de lo que ya se almacena localmente en tu navegador. consulta nuestra <a class=\"text-primary-dark hover:text-primary-dark/80 transition-colors\" href=\"/cookies\">política de cookies</a> para más detalles."
+				"content": "shelter no usa cookies. no hay cuentas ni inicio de sesión, así que no hay nada que recordar entre sesiones más allá de lo que ya se guarda localmente en tu navegador. consulta nuestra <a class=\"text-primary-dark hover:text-primary-dark/80 transition-colors\" href=\"/es/cookies\">política de cookies</a> para más detalles."
 			},
 			"rights": {
 				"title": "tus derechos",
-				"content": "como no recopilamos tus datos, no tenemos nada que eliminar ni compartir por nuestra parte. tienes la propiedad y el control completos de todo lo que creas en shelter, y puedes exportar o eliminar tus datos en cualquier momento directamente desde la aplicación."
+				"content": "como no recopilamos tus datos, no tenemos nada que borrar ni compartir por nuestra parte. todo lo que creas en shelter es tuyo y lo controlas tú, y puedes exportar o borrar tus datos cuando quieras directamente desde la aplicación."
 			},
 			"futureSync": {
-				"title": "futuro: sincronización en la nube",
-				"content": "estamos trabajando en una función opcional de sincronización en la nube. cuando se lance, tus datos se cifrarán en tu dispositivo antes de llegar a nuestros servidores, y solo tú tendrás las claves para descifrarlos. actualizaremos esta política con todos los detalles antes de que esta función esté disponible."
+				"title": "en el futuro: sincronización en la nube",
+				"content": "estamos trabajando en una función opcional de sincronización en la nube. cuando llegue, tus datos se cifrarán en tu dispositivo antes de llegar a nuestros servidores, y solo tú tendrás las claves para descifrarlos. actualizaremos esta política con todos los detalles antes de que la función esté disponible."
 			},
 			"changes": {
 				"title": "cambios en esta política",
-				"content": "si alguna vez cambiamos esta política de privacidad, te lo notificaremos claramente y te daremos la opción de revisar los cambios. nunca haremos cambios que comprometan tu privacidad sin tu conocimiento."
+				"content": "si alguna vez cambiamos esta política de privacidad, te avisaremos con claridad y podrás revisar los cambios. nunca haremos cambios que pongan en riesgo tu privacidad sin que lo sepas."
 			},
 			"contact": {
-				"title": "contacta con nosotros",
-				"content": "si tienes alguna pregunta sobre esta política de privacidad, ponte en contacto con nosotros en el <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">servidor de discord</a>"
+				"title": "contacto",
+				"content": "si tienes cualquier pregunta sobre esta política de privacidad, escríbenos en el <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">servidor de discord</a>"
 			}
 		},
 		"terms": {
-			"title": "términos de servicio",
+			"title": "términos del servicio",
 			"lastUpdated": "última actualización: 18 de junio de 2026",
 			"welcome": {
-				"title": "¡bienvenido a shelter!",
-				"content": "al utilizar shelter, aceptas estos términos. los hemos mantenido simples y claros porque creemos en la transparencia."
+				"title": "¡te damos la bienvenida a shelter!",
+				"content": "al usar shelter, aceptas estos términos. los hemos escrito de forma sencilla y directa porque creemos en la transparencia."
 			},
 			"whatIs": {
 				"title": "qué es shelter",
-				"content": "shelter es un espacio privado y cifrado para tus pensamientos, notas y reflexiones. está diseñado para ser un lugar seguro donde puedas escribir libremente sin juicios ni vigilancia. actualmente shelter se ejecuta completamente en tu navegador — no se requiere ninguna cuenta ni inicio de sesión."
+				"content": "shelter es un espacio privado y cifrado para tus pensamientos, notas y reflexiones. está pensado para ser un lugar seguro donde escribir con libertad, sin juicios ni vigilancia. por ahora, shelter funciona por completo en tu navegador: no necesitas cuenta ni iniciar sesión."
 			},
 			"yourContent": {
 				"title": "tu contenido",
-				"content1": "todo lo que escribes en shelter te pertenece. no reclamamos ninguna propiedad sobre tu contenido. como tus datos están cifrados y almacenados en tu propio dispositivo, de todas formas no podemos acceder a ellos.",
-				"content2": "eres responsable del contenido que creas. aunque no podemos ver tus entradas, te pedimos que utilices shelter de manera responsable y legal."
+				"content1": "todo lo que escribes en shelter es tuyo. no reclamamos ningún derecho sobre tu contenido. además, como tus datos están cifrados y guardados en tu propio dispositivo, tampoco podríamos acceder a ellos.",
+				"content2": "eres responsable del contenido que creas. aunque no podemos ver tus entradas, te pedimos que uses shelter de forma responsable y legal."
 			},
 			"acceptableUse": {
 				"title": "uso aceptable",
-				"intro": "aceptas no:",
+				"intro": "te comprometes a no:",
 				"items": {
-					"illegal": "utilizar shelter para actividades ilegales",
+					"illegal": "usar shelter para actividades ilegales",
 					"hack": "intentar hackear, romper o comprometer la seguridad de shelter",
-					"interfere": "interferir con el acceso de otros usuarios al servicio",
-					"malware": "utilizar shelter para distribuir malware o software dañino",
-					"ip": "vulnerar los derechos de propiedad intelectual o privacidad de nadie",
-					"superearth": "jurar lealtad eterna a la Súper Tierra; cualquier actividad sospechosa debe ser reportada a tu oficial democrático más cercano"
+					"interfere": "interferir en el acceso de otras personas al servicio",
+					"malware": "usar shelter para distribuir malware o software dañino",
+					"ip": "vulnerar los derechos de propiedad intelectual o la privacidad de nadie"
 				}
 			},
 			"availability": {
 				"title": "disponibilidad del servicio",
-				"content1": "trabajamos duro para mantener shelter funcionando sin problemas, pero no podemos garantizar que el sitio web esté disponible el 100% del tiempo. de vez en cuando puede ser necesario detenerlo por mantenimiento o actualizaciones.",
-				"content2": "como tus datos se almacenan localmente en tu dispositivo, tus entradas siguen siendo accesibles para ti incluso si el sitio web de shelter está temporalmente inactivo."
+				"content1": "nos esforzamos para que shelter funcione bien, pero no podemos garantizar que la web esté disponible el 100% del tiempo. de vez en cuando puede que tengamos que pararla por mantenimiento o actualizaciones.",
+				"content2": "como tus datos se guardan localmente en tu dispositivo, podrás seguir accediendo a tus entradas aunque la web de shelter esté caída temporalmente."
 			},
 			"backups": {
 				"title": "copias de seguridad",
-				"content": "tus entradas viven en tu dispositivo. recomendamos encarecidamente que exportes regularmente tus entradas como copia de seguridad — si pierdes el acceso a tu dispositivo o borras los datos del navegador sin una copia de seguridad, no tenemos forma de recuperar tus entradas. eres responsable de mantener tus propias copias de seguridad del contenido importante."
+				"content": "tus entradas viven en tu dispositivo. te recomendamos encarecidamente que las exportes con regularidad como copia de seguridad: si pierdes el acceso a tu dispositivo o borras los datos del navegador sin tener una copia, no tenemos forma de recuperarlas. eres responsable de mantener tus propias copias de seguridad de lo que te importe."
 			},
 			"noWarranty": {
 				"title": "sin garantía",
-				"content": "shelter se proporciona \"tal cual\" sin ningún tipo de garantía. hacemos todo lo posible para que shelter sea fiable y seguro, pero no podemos garantizar que cumpla con todas tus necesidades o que esté completamente libre de errores."
+				"content": "shelter se ofrece \"tal cual\", sin garantías de ningún tipo. hacemos todo lo posible para que shelter sea fiable y seguro, pero no podemos garantizar que cubra todas tus necesidades ni que esté libre de errores."
 			},
 			"liability": {
 				"title": "limitación de responsabilidad",
-				"content": "no somos responsables de ningún daño derivado del uso o la imposibilidad de uso de shelter. esto incluye la pérdida de datos, a pesar de que trabajamos duro para evitarlo."
+				"content": "no nos hacemos responsables de ningún daño derivado del uso de shelter o de la imposibilidad de usarlo. esto incluye la pérdida de datos, aunque trabajamos mucho para evitarla."
 			},
 			"futureSync": {
-				"title": "futuro: cuentas y sincronización en la nube",
-				"content": "estamos trabajando en una función opcional de sincronización en la nube, que introducirá cuentas. cuando se lance, serás responsable de mantener tu cuenta segura, y actualizaremos estos términos con todos los detalles sobre cuentas, datos sincronizados y cancelación antes de que esa función esté disponible."
+				"title": "en el futuro: cuentas y sincronización en la nube",
+				"content": "estamos trabajando en una función opcional de sincronización en la nube, que traerá cuentas. cuando llegue, serás responsable de mantener tu cuenta segura, y actualizaremos estos términos con todos los detalles sobre cuentas, datos sincronizados y baja del servicio antes de que la función esté disponible."
 			},
 			"changes": {
 				"title": "cambios en estos términos",
-				"content": "podemos actualizar estos términos de vez en cuando. si hacemos cambios significativos, te lo notificaremos claramente y te daremos tiempo para revisarlos. continuar utilizando shelter después de los cambios significa que aceptas los nuevos términos."
+				"content": "puede que actualicemos estos términos de vez en cuando. si hacemos cambios importantes, te avisaremos con claridad y te daremos tiempo para revisarlos. si sigues usando shelter después de los cambios, aceptas los nuevos términos."
 			},
 			"contact": {
-				"title": "contacta con nosotros",
-				"content": "si tienes alguna pregunta sobre esta política de privacidad, ponte en contacto con nosotros en el <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">servidor de discord</a>"
+				"title": "contacto",
+				"content": "si tienes cualquier pregunta sobre estos términos, escríbenos en el <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">servidor de discord</a>"
 			}
 		},
 		"credits": {
 			"title": "créditos",
-			"intro": "gracias a todos los que han apoyado a shelter de una forma u otra, ya sea con código, diseño, comentarios o simplemente usándolo. este proyecto no sería lo que es sin vosotros <3",
+			"intro": "gracias a todas las personas que han apoyado shelter de una forma u otra, ya sea con código, diseño, opiniones o simplemente usándolo. este proyecto no sería lo que es sin vosotros <3",
 			"contributors": "colaboradores",
 			"roles": {
 				"development": "desarrollo",
-				"artist": "artista",
-				"tester": "probador",
-				"translator": "traductor"
+				"artist": "arte",
+				"tester": "pruebas",
+				"translator": "traducción"
 			}
+		},
+		"notFound": {
+			"title": "¡ups! esta página no existe",
+			"description": "puede que se haya movido o que el enlace tenga una errata.",
+			"home": "volver al inicio"
 		}
 	}
 }

@@ -1,78 +1,122 @@
 {
+	"metadata": {
+		"landing": {
+			"title": "shelter - privates tagebuch mit ende-zu-ende-verschlüsselung",
+			"description": "ein gemütliches open-source-tagebuch mit ende-zu-ende-verschlüsselung. schreib offline in deinem browser; nur du kannst deine einträge lesen."
+		},
+		"cookies": {
+			"title": "cookie-richtlinie - shelter",
+			"description": "infos dazu, wie shelter cookies und lokalen speicher nutzt, um deine sitzung sicher zu halten."
+		},
+		"privacy": {
+			"title": "datenschutzerklärung - shelter",
+			"description": "deine privatsphäre steht an erster stelle. erfahre, wie shelter deine daten mit verschlüsselung schützt und alles auf deinem gerät behält."
+		},
+		"terms": {
+			"title": "nutzungsbedingungen - shelter",
+			"description": "lies die nutzungsbedingungen von shelter, deinem privaten open-source-tagebuch."
+		},
+		"credits": {
+			"title": "credits - shelter",
+			"description": "danke an all die großartigen menschen, die dieses projekt möglich gemacht haben."
+		},
+		"notFound": {
+			"title": "seite nicht gefunden - shelter",
+			"description": "diese seite gibt es nicht."
+		}
+	},
 	"landing": {
 		"hero": {
 			"title": "shelter",
-			"subtitle": "ein sicherer ort an dem deine gedanken frei atmen können, ohne beurteilt zu werden",
-			"image_alt": "machka schreibt ihren tagebuch mit ihrer kitty ziggy"
+			"subtitle": "ein sicherer ort, an dem deine gedanken durchatmen können",
+			"tagline": "- ein verschlüsseltes open-source-tagebuch, das auch offline funktioniert",
+			"image_alt": "machka schreibt mit ihrer katze ziggy in ihr tagebuch",
+			"cta": "los geht's",
+			"secondary_cta": "so funktioniert's"
 		},
 		"features": {
+			"title": "gemacht, damit du dich wie zu hause fühlst",
 			"1": {
-				"title": "top-level sicherheit",
-				"description": "deine einträge sind jederzeit verschlüsselt und geschützt."
+				"title": "lokal gespeichert & offline-first",
+				"description": "deine tagebücher bleiben sicher auf deinem eigenen gerät."
 			},
 			"2": {
-				"title": "lokale speicherung und offline-first",
-				"description": "beware deine tagebücher sicher auf deinem gerät auf."
+				"title": "cloud-sync (bald verfügbar)",
+				"description": "bald hast du deine gedanken überall dabei."
 			},
 			"3": {
-				"title": "cloud sync (kommt bald)",
-				"description": "bald kannst du jederzeit und überall auf deine gedanken zugreifen."
-			},
-			"title": "ein sicherer ort für deine gedanken"
+				"title": "ruhe als prinzip",
+				"description": "keine fristen, kein druck. nur ein ruhiger ort zum schreiben, in deinem eigenen tempo."
+			}
 		},
 		"security": {
 			"1": {
 				"title": "deine gedanken gehören dir",
-				"description": "shelter speichert notizen privat in deinem browser, sodass du schnell darauf zugreifen kannst - sogar offline. niemand anderes kann sie lesen, nicht einmal wir."
+				"description": "shelter speichert deine notizen privat in deinem browser, damit du sie schnell öffnen kannst, sogar offline. niemand sonst kann sie lesen, nicht einmal wir."
 			},
 			"2": {
-				"title": "ende-zu-ende verschlüsselt",
-				"description": "deine einträge sind ende-zu-ende verschlüsselt und werden zuerst offline gespeichert. wir lesen, scannen oder verkaufen deine daten niemals. punkt."
+				"title": "ende-zu-ende-verschlüsselt",
+				"description": "deine einträge sind ende-zu-ende-verschlüsselt und werden zuerst auf deinem gerät gespeichert. wir lesen, scannen oder verkaufen deine daten niemals. punkt."
 			},
 			"3": {
-				"title": "0 tracker und 0 werbung",
-				"description": "wir erfassen strikt keine persönlichen daten. es gibt keine tracker, keine werbung und keine versteckten analysen, die dich verfolgen."
+				"title": "0 tracker & 0 werbung",
+				"description": "wir sammeln grundsätzlich keine persönlichen daten. keine tracker, keine werbung, die dir überallhin folgt."
 			},
-			"title": "vollständig geschützt"
+			"title": "rundum geschützt",
+			"image_alt": "ein geschlossenes tagebuch mit einem vorhängeschloss"
 		},
 		"faqs": {
+			"title": "häufige fragen",
 			"1": {
 				"question": "was ist shelter?",
-				"answer": "shelter ist ein sicherer ort an dem deine gedanken atmen können. es ist eine sichere journaling-web-app in der du frei und ohne beurteilung in deinem lieblingsbrowser schreiben kannst."
+				"answer": "shelter ist ein sicherer ort, an dem deine gedanken durchatmen können. es ist eine sichere tagebuch-web-app, in der du frei und ohne bewertung in deinem lieblingsbrowser schreiben kannst."
 			},
 			"2": {
-				"question": "ist es open source?",
-				"answer": "ja! den quellcode findest du auf <a href=\"https://github.com/Stageddat/shelter-web\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">github</a> und wir freuen uns über beiträge."
+				"question": "sind meine daten sicher?",
+				"answer": "ja. deine einträge sind ende-zu-ende-verschlüsselt und werden zuerst lokal auf deinem gerät gespeichert. niemand kann sie lesen, nicht einmal wir: deine daten werden mit einem schlüssel verschlüsselt, den nur du hast."
 			},
 			"3": {
-				"question": "wo sind die daten gespeichert?",
-				"answer": "alle deine einträge werden lokal in deinem browser in verschlüsseltem speicher abgelegt."
+				"question": "ist shelter open source?",
+				"answer": "ja! den quellcode findest du auf <a href=\"https://github.com/Stageddat/shelter-web\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">github</a>, und wir freuen uns über jeden beitrag."
 			},
 			"4": {
 				"question": "wovon ist dieses projekt inspiriert?",
-				"answer": "dieses projekt ist vom kommentarbereich des songs shelter von porter robinson und madeon inspiriert. viele menschen schreiben dort tägliche einträge, und wir wollten einen persönlichen, privaten raum für diese kleinen lebensmomente schaffen. du kannst dir das video ansehen <a href=\"https://www.youtube.com/watch?v=HQnC1UHBvWA\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">hier</a>!"
+				"answer": "dieses projekt ist von den kommentaren unter dem song \"shelter\" von porter robinson & madeon inspiriert. viele menschen schreiben dort jeden tag kleine stücke aus ihrem leben auf, und wir wollten dafür einen persönlichen, privaten ort schaffen. das video findest du <a href=\"https://www.youtube.com/watch?v=HQnC1UHBvWA\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">hier</a>!"
 			},
 			"5": {
 				"question": "ist es kostenlos?",
-				"answer": "ja! shelter is kostenlos, ohne werbung, und open source. es ist ein herzensprojekt."
+				"answer": "ja! shelter ist kostenlos, werbefrei und open source. mit ❤️ gemacht!"
 			},
 			"6": {
-				"question": "wie werden die daten verschlüsselt?",
-				"answer": "die daten werden lokal mit starker verschlüsselung gespeichert. mehr über unsere sicherheitsprotokolle erfährst du in unserer <a href=\"/privacy\" class=\"text-primary underline hover:opacity-80\">datenschutzerklärung</a>."
-			},
-			"title": "häufig gestellte fragen"
+				"question": "wer ist machka?",
+				"answer": "sie ist unser offizielles maskottchen! du triffst sie und ihre katze ziggy oft, wie sie über die website streifen.<br /><br /> ein ganz besonderer dank geht an <a href=\"https://www.instagram.com/fiddlearty\" target=\"_blank\" class=\"text-primary underline hover:opacity-80\">fiddle</a> für all die wunderschönen illustrationen!"
+			}
 		},
 		"start": {
-			"title": "bereit zu ruhen?",
-			"description": "starte deine reise in deinem eigenem tempo.",
-			"button": "starte meine reise!"
+			"title": "zeit zum durchatmen?",
+			"description": "beginne deine reise in deinem eigenen tempo.",
+			"button": "meine reise beginnen!"
 		},
 		"navbar": {
 			"logo": "shelter",
 			"features": "funktionen",
 			"security": "sicherheit",
 			"faqs": "fragen",
-			"start": "jetzt starten"
+			"menu": "menü",
+			"closeMenu": "menü schließen",
+			"start": "loslegen"
+		},
+		"themeSelector": {
+			"label": "design",
+			"system": "system",
+			"light": "hell",
+			"dark": "dunkel",
+			"mocha-lavender": "mokka lavendel"
+		},
+		"languageSelector": {
+			"label": "sprache",
+			"official": "offizielle übersetzungen",
+			"community": "übersetzungen der community"
 		},
 		"footer": {
 			"title": "shelter",
@@ -80,11 +124,12 @@
 			"copyright": "alle rechte vorbehalten.",
 			"product": {
 				"title": "produkt",
+				"credits": "credits",
 				"cloud": "cloud",
-				"selfhost": "selbst-hosten"
+				"selfhost": "selbst hosten"
 			},
 			"legal": {
-				"title": "legal",
+				"title": "rechtliches",
 				"privacy": "datenschutzerklärung",
 				"terms": "nutzungsbedingungen",
 				"cookies": "cookie-richtlinie"
@@ -92,6 +137,165 @@
 			"contact": {
 				"title": "kontakt"
 			}
+		},
+		"cookies": {
+			"title": "cookie-richtlinie",
+			"lastUpdated": "zuletzt aktualisiert: 18. juni 2026",
+			"whatAreCookies": {
+				"title": "was sind cookies?",
+				"content": "cookies sind kleine textdateien, die websites auf deinem gerät speichern, um sich informationen über dich zu merken. sie sind ein ganz normaler teil davon, wie moderne websites funktionieren."
+			},
+			"ourApproach": {
+				"title": "wie wir mit cookies umgehen",
+				"content": "shelter verwendet keine cookies. es gibt kein konto und keinen login, also gibt es zwischen deinen besuchen nichts zu merken, außer dem, was bereits lokal in deinem browser gespeichert ist."
+			},
+			"whatWeDontUse": {
+				"title": "was wir nicht verwenden",
+				"intro": "shelter verwendet keine:",
+				"items": {
+					"tracking": "cookies, die dein verhalten verfolgen",
+					"advertising": "werbe-cookies, die dir anzeigen einblenden",
+					"analytics": "analyse-cookies, die nutzungsstatistiken sammeln",
+					"thirdParty": "drittanbieter-cookies von sozialen netzwerken oder anderen diensten",
+					"personal": "cookies, die dich persönlich identifizieren"
+				}
+			},
+			"localStorage": {
+				"title": "lokaler speicher",
+				"content1": "statt cookies nutzt shelter den lokalen speicher deines browsers, um deine verschlüsselten einträge auf deinem gerät zu speichern. das ist nicht dasselbe wie cookies: so kannst du offline auf deine inhalte zugreifen, und sie verlassen nie dein gerät.",
+				"content2": "alles, was lokal gespeichert wird, ist verschlüsselt und nur für dich zugänglich."
+			},
+			"futureSync": {
+				"title": "in zukunft: cloud-sync",
+				"content": "wir arbeiten an einer optionalen cloud-sync-funktion, für die eventuell ein paar notwendige cookies nötig sind (zum beispiel, damit du angemeldet bleibst). falls sich das ändert, aktualisieren wir diese richtlinie mit allen details, bevor die funktion verfügbar wird."
+			},
+			"updates": {
+				"title": "änderungen dieser richtlinie",
+				"content": "falls wir jemals cookies hinzufügen oder ändern müssen, aktualisieren wir diese richtlinie und sagen dir bescheid. wir halten den einsatz von cookies so gering wie möglich."
+			},
+			"contact": {
+				"title": "kontakt",
+				"content": "wenn du fragen zu dieser cookie-richtlinie hast, schreib uns auf dem <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord-server</a>"
+			}
+		},
+		"privacy": {
+			"title": "datenschutzerklärung",
+			"lastUpdated": "zuletzt aktualisiert: 18. juni 2026",
+			"noCollect": {
+				"title": "wir sammeln deine daten nicht",
+				"content": "shelter basiert auf einem einfachen prinzip: deine gedanken gehören dir. shelter läuft komplett in deinem browser: wir sammeln, speichern oder verarbeiten deine persönlichen daten auf keinem server. alles, was du schreibst, bleibt auf deinem gerät."
+			},
+			"storage": {
+				"title": "wie deine daten gespeichert werden",
+				"intro": "alle deine einträge werden lokal in deinem browser in einem verschlüsselten speicher abgelegt. das bedeutet:",
+				"items": {
+					"device": "deine notizen verlassen nie dein gerät",
+					"read": "wir können deine einträge nicht lesen, selbst wenn wir wollten",
+					"encrypted": "deine daten sind im ruhezustand mit einem schlüssel verschlüsselt, den nur du hast",
+					"control": "du hast die volle kontrolle über deine informationen"
+				}
+			},
+			"analytics": {
+				"title": "statistiken",
+				"content": "wir nutzen eine selbst gehostete, datenschutzfreundliche analyse (umami), um zu verstehen, wie shelter insgesamt genutzt wird, zum beispiel seitenaufrufe und allgemeine nutzungstrends. diese daten sind anonymisiert, werden nie mit deiner identität oder deinen tagebucheinträgen verknüpft und nie an jemanden weitergegeben oder verkauft. du kannst sie jederzeit deaktivieren."
+			},
+			"noAds": {
+				"title": "keine werbung, kein datenverkauf",
+				"content": "wir werden niemals werbung zeigen oder deine daten an dritte verkaufen. niemals. deine privatsphäre ist nicht käuflich."
+			},
+			"cookies": {
+				"title": "cookies",
+				"content": "shelter verwendet keine cookies. es gibt kein konto und keinen login, also gibt es zwischen deinen sitzungen nichts zu merken, außer dem, was bereits lokal in deinem browser gespeichert ist. mehr dazu in unserer <a class=\"text-primary-dark hover:text-primary-dark/80 transition-colors\" href=\"/de/cookies\">cookie-richtlinie</a>."
+			},
+			"rights": {
+				"title": "deine rechte",
+				"content": "da wir deine daten nicht sammeln, gibt es auf unserer seite nichts zu löschen oder weiterzugeben. alles, was du in shelter erstellst, gehört dir und steht unter deiner kontrolle, und du kannst deine daten jederzeit direkt in der app exportieren oder löschen."
+			},
+			"futureSync": {
+				"title": "in zukunft: cloud-sync",
+				"content": "wir arbeiten an einer optionalen cloud-sync-funktion. wenn sie startet, werden deine daten auf deinem gerät verschlüsselt, bevor sie überhaupt unsere server erreichen, und nur du hast die schlüssel, um sie zu entschlüsseln. wir aktualisieren diese richtlinie mit allen details, bevor die funktion verfügbar wird."
+			},
+			"changes": {
+				"title": "änderungen dieser datenschutzerklärung",
+				"content": "falls wir diese datenschutzerklärung jemals ändern, informieren wir dich klar darüber und geben dir die möglichkeit, die änderungen zu prüfen. wir werden niemals ohne dein wissen änderungen vornehmen, die deine privatsphäre gefährden."
+			},
+			"contact": {
+				"title": "kontakt",
+				"content": "wenn du fragen zu dieser datenschutzerklärung hast, schreib uns auf dem <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord-server</a>"
+			}
+		},
+		"terms": {
+			"title": "nutzungsbedingungen",
+			"lastUpdated": "zuletzt aktualisiert: 18. juni 2026",
+			"welcome": {
+				"title": "willkommen bei shelter!",
+				"content": "wenn du shelter nutzt, stimmst du diesen bedingungen zu. wir haben sie einfach und verständlich gehalten, weil uns transparenz wichtig ist."
+			},
+			"whatIs": {
+				"title": "was shelter ist",
+				"content": "shelter ist ein privater, verschlüsselter ort für deine gedanken, notizen und überlegungen. er soll ein sicherer ort sein, an dem du frei schreiben kannst, ohne bewertung oder überwachung. shelter läuft derzeit komplett in deinem browser: du brauchst kein konto und keinen login."
+			},
+			"yourContent": {
+				"title": "deine inhalte",
+				"content1": "alles, was du in shelter schreibst, gehört dir. wir erheben keinerlei rechte an deinen inhalten. da deine daten verschlüsselt auf deinem eigenen gerät gespeichert sind, könnten wir ohnehin nicht darauf zugreifen.",
+				"content2": "du bist für die inhalte verantwortlich, die du erstellst. auch wenn wir deine einträge nicht sehen können, bitten wir dich, shelter verantwortungsvoll und legal zu nutzen."
+			},
+			"acceptableUse": {
+				"title": "zulässige nutzung",
+				"intro": "du verpflichtest dich, shelter nicht zu nutzen, um:",
+				"items": {
+					"illegal": "illegale aktivitäten auszuüben",
+					"hack": "die sicherheit von shelter zu hacken, zu umgehen oder zu gefährden",
+					"interfere": "anderen den zugang zum dienst zu erschweren",
+					"malware": "malware oder schädliche software zu verbreiten",
+					"ip": "das geistige eigentum oder die privatsphäre anderer zu verletzen"
+				}
+			},
+			"availability": {
+				"title": "verfügbarkeit des dienstes",
+				"content1": "wir geben uns viel mühe, dass shelter reibungslos läuft, können aber nicht garantieren, dass die website zu 100% der zeit erreichbar ist. gelegentlich müssen wir sie für wartungsarbeiten oder updates vom netz nehmen.",
+				"content2": "da deine daten lokal auf deinem gerät gespeichert sind, kannst du weiterhin auf deine einträge zugreifen, auch wenn die website von shelter vorübergehend nicht erreichbar ist."
+			},
+			"backups": {
+				"title": "backups",
+				"content": "deine einträge leben auf deinem gerät. wir empfehlen dir dringend, sie regelmäßig als backup zu exportieren: wenn du den zugriff auf dein gerät verlierst oder deine browserdaten ohne backup löschst, können wir deine einträge auf keinen fall wiederherstellen. du bist selbst dafür verantwortlich, backups deiner wichtigen inhalte zu machen."
+			},
+			"noWarranty": {
+				"title": "keine gewährleistung",
+				"content": "shelter wird \"wie besehen\" und ohne jegliche gewährleistung bereitgestellt. wir tun unser bestes, damit shelter zuverlässig und sicher ist, können aber nicht garantieren, dass es all deine anforderungen erfüllt oder völlig fehlerfrei ist."
+			},
+			"liability": {
+				"title": "haftungsbeschränkung",
+				"content": "wir haften nicht für schäden, die durch die nutzung oder die nicht mögliche nutzung von shelter entstehen. das gilt auch für datenverlust, obwohl wir alles tun, um ihn zu verhindern."
+			},
+			"futureSync": {
+				"title": "in zukunft: konten und cloud-sync",
+				"content": "wir arbeiten an einer optionalen cloud-sync-funktion, mit der es konten geben wird. sobald sie startet, bist du dafür verantwortlich, dein konto sicher zu halten, und wir aktualisieren diese bedingungen vorher mit allen details zu konten, synchronisierten daten und kündigung."
+			},
+			"changes": {
+				"title": "änderungen dieser bedingungen",
+				"content": "wir können diese bedingungen von zeit zu zeit aktualisieren. bei wesentlichen änderungen informieren wir dich klar darüber und geben dir zeit, sie zu prüfen. wenn du shelter nach den änderungen weiter nutzt, akzeptierst du die neuen bedingungen."
+			},
+			"contact": {
+				"title": "kontakt",
+				"content": "wenn du fragen zu diesen bedingungen hast, schreib uns auf dem <a href=\"https://discord.gg/BntK5GbF2M\" class=\"text-primary-dark hover:text-primary-dark/80 underline transition-colors\">discord-server</a>"
+			}
+		},
+		"credits": {
+			"title": "credits",
+			"intro": "danke an alle, die shelter auf die eine oder andere weise unterstützt haben, ob mit code, design, feedback oder einfach, indem sie es benutzen. ohne euch wäre dieses projekt nicht, was es ist <3",
+			"contributors": "mitwirkende",
+			"roles": {
+				"development": "entwicklung",
+				"artist": "kunst",
+				"tester": "testen",
+				"translator": "übersetzung"
+			}
+		},
+		"notFound": {
+			"title": "hoppla! diese seite gibt es nicht",
+			"description": "vielleicht wurde sie verschoben, oder im link ist ein tippfehler.",
+			"home": "zur startseite"
 		}
 	}
 }
