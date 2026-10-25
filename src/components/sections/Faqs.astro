@@ -13,7 +13,7 @@ const faqs = ([1, 2, 3, 4, 5, 6] as const).map((n) => ({
 
 <section id="faqs" class="bg-background px-8 py-24 lg:py-40">
 	<div class="mx-auto max-w-3xl">
-		<h2 class="mb-16 text-center text-5xl font-normal text-pretty text-foreground sm:text-6xl lg:text-7xl">
+		<h2 class="mb-16 text-center font-normal text-pretty text-foreground">
 			{t('landing.faqs.title')}
 		</h2>
 
@@ -23,10 +23,10 @@ const faqs = ([1, 2, 3, 4, 5, 6] as const).map((n) => ({
 					name="faqs"
 					class="rounded-2xl border border-border bg-secondary/20 px-6 py-1 transition-colors hover:bg-secondary/30"
 				>
-					<AccordionTrigger class="items-center text-2xl font-semibold **:data-[slot=accordion-trigger-icon]:size-6 tracking-wide text-foreground hover:text-primary hover:no-underline">
+					<AccordionTrigger class="items-center font-semibold **:data-[slot=accordion-trigger-icon]:size-6 tracking-wide text-foreground hover:text-primary hover:no-underline">
 						{faq.question}
 					</AccordionTrigger>
-					<AccordionContent class="text-2xl leading-relaxed text-muted-foreground">
+					<AccordionContent class="leading-relaxed text-muted-foreground">
 						<Fragment set:html={faq.answer} />
 					</AccordionContent>
 				</AccordionItem>

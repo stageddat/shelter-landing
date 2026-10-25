@@ -9,16 +9,14 @@ const t = useTranslations(Astro.currentLocale);
 <section id="start" class="relative overflow-hidden bg-background px-8 py-32 lg:py-52">
 	<div class="mx-auto max-w-4xl text-center">
 		<div class="space-y-6">
-			<h2 class="text-6xl font-normal text-foreground sm:text-7xl lg:text-8xl">
-				{t('landing.start.title')}
-			</h2>
-			<p class="mx-auto max-w-md text-xl leading-relaxed text-muted-foreground lg:text-2xl">
+			<h2 class="font-normal text-foreground">{t('landing.start.title')}</h2>
+			<p class="mx-auto max-w-md leading-relaxed text-muted-foreground">
 				{t('landing.start.description')}
 			</p>
 		</div>
 
 		<div class="mt-2 flex flex-col items-center gap-6">
-			<Button href={signupUrl} size="lg" class="px-6 py-3 text-2xl font-semibold">
+			<Button href={signupUrl} size="lg" class="font-semibold">
 				{t('landing.start.button')}
 			</Button>
 		</div>

@@ -25,7 +25,9 @@
 		"hero": {
 			"title": "shelter",
 			"subtitle": "a safe place where your thoughts can breathe",
-			"image_alt": "machka writing her journal with her kitty ziggy"
+			"image_alt": "machka writing her journal with her kitty ziggy",
+			"cta": "start writing",
+			"secondary_cta": "see how it works"
 		},
 		"features": {
 			"title": "made to feel like home",
