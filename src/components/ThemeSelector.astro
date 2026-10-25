@@ -2,12 +2,28 @@
 // shelter-assets' ThemeSelector as plain HTML (no Svelte island). Its only JavaScript is
 // initThemeSelectors, in the <script> below: Astro bundles it once per page, however many
 // selectors there are.
-import { ThemeSelector } from 'shelter-assets';
+import { ThemeSelector, type ThemePreference } from 'shelter-assets';
+import { useTranslations } from '../lib/i18n';
 
 type Props = { class?: string; align?: 'start' | 'end'; variant?: 'popover' | 'inline' };
+
+const t = useTranslations(Astro.currentLocale);
+
+const labels = {
+	system: t('landing.themeSelector.system'),
+	light: t('landing.themeSelector.light'),
+	dark: t('landing.themeSelector.dark'),
+	'mocha-lavender': t('landing.themeSelector.mocha-lavender')
+} satisfies Record<ThemePreference, string>;
 ---
 
-<ThemeSelector class={Astro.props.class} align={Astro.props.align} variant={Astro.props.variant} />
+<ThemeSelector
+	{labels}
+	label={t('landing.themeSelector.label')}
+	class={Astro.props.class}
+	align={Astro.props.align}
+	variant={Astro.props.variant}
+/>
 
 <script>
 	import { initThemeSelectors } from 'shelter-assets';

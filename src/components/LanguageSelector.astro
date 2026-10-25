@@ -3,13 +3,14 @@
 // Rendered to HTML at build time: no JavaScript reaches the browser.
 import { getRelativeLocaleUrl } from 'astro:i18n';
 import { LanguageSelector, type LanguageOption } from 'shelter-assets';
-import { pathWithoutLocale } from '../lib/i18n';
+import { pathWithoutLocale, useTranslations } from '../lib/i18n';
 import { localeName, locales, officialLocales, type Locale } from '../lib/locales';
 
 type Props = { class?: string; align?: 'start' | 'end'; variant?: 'popover' | 'inline' };
 
 const current = (Astro.currentLocale ?? 'en') as Locale;
 const path = pathWithoutLocale(Astro.url.pathname);
+const t = useTranslations(current);
 
 const languages: LanguageOption[] = locales.map((locale) => ({
 	locale,
@@ -22,6 +23,11 @@ const languages: LanguageOption[] = locales.map((locale) => ({
 <LanguageSelector
 	{current}
 	{languages}
+	labels={{
+		language: t('landing.languageSelector.label'),
+		official: t('landing.languageSelector.official'),
+		community: t('landing.languageSelector.community')
+	}}
 	class={Astro.props.class}
 	align={Astro.props.align}
 	variant={Astro.props.variant}

@@ -101,6 +101,18 @@
 			"closeMenu": "close menu",
 			"start": "get started"
 		},
+		"themeSelector": {
+			"label": "theme",
+			"system": "system",
+			"light": "light",
+			"dark": "dark",
+			"mocha-lavender": "mocha lavender"
+		},
+		"languageSelector": {
+			"label": "language",
+			"official": "official translations",
+			"community": "community translations"
+		},
 		"footer": {
 			"title": "shelter",
 			"year": "© 2025-{{currentYear}} shelter",
