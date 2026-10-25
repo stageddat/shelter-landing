@@ -1,6 +1,6 @@
 ---
 import { getAbsoluteLocaleUrl } from 'astro:i18n';
-import { fontInitScript, themeInitScript } from 'shelter-assets';
+import { BreakpointIndicator, fontInitScript, themeInitScript } from 'shelter-assets';
 import latinFont from 'shelter-assets/fonts/playpen-sans/latin.woff2?url';
 import { pathWithoutLocale } from '../lib/i18n';
 import { defaultLocale, locales } from '../lib/locales';
@@ -44,6 +44,8 @@ const path = pathWithoutLocale(Astro.url.pathname);
 		<Navbar />
 		<slot />
 		<Footer />
+		<!-- solo en dev: breakpoint actual de tailwind -->
+		{import.meta.env.DEV && <BreakpointIndicator />}
 		<script>
 			import { watchThemePreference } from 'shelter-assets';
 
