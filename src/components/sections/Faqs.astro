@@ -24,7 +24,7 @@ const faqs = ([1, 2, 3, 4, 5, 6] as const).map((n) => ({
 					name="faqs"
 					class="rounded-2xl border border-border bg-secondary/20 px-6 py-1 transition-colors hover:bg-secondary/30"
 				>
-					<AccordionTrigger class="items-center font-semibold **:data-[slot=accordion-trigger-icon]:size-6 tracking-wide text-foreground hover:text-primary hover:no-underline">
+					<AccordionTrigger class="items-center font-semibold tracking-wide text-foreground hover:text-primary hover:no-underline **:data-[slot=accordion-trigger-icon]:size-6">
 						{faq.question}
 					</AccordionTrigger>
 					<AccordionContent class="leading-relaxed text-muted-foreground">
