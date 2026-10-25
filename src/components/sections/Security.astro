@@ -1,5 +1,6 @@
 ---
 import { useTranslations } from '../../lib/i18n';
+import lockedJournal from '../../assets/locked-journal.svg?url';
 
 const t = useTranslations(Astro.currentLocale);
 
@@ -18,8 +19,15 @@ const items = [
 
 		<div class="flex flex-col items-center gap-2 lg:flex-row lg:gap-24">
 			<div class="relative flex w-full justify-center lg:w-1/2">
-				<!-- TODO: book illustration as a themed SVG -->
-				<div class="aspect-square w-full max-w-sm sm:max-w-md" aria-hidden="true"></div>
+				<!-- lazy: el href lo pone el script de abajo cuando se acerca a la pantalla -->
+				<svg
+					class="illustration aspect-square w-full max-w-sm sm:max-w-md"
+					viewBox="0 0 1400 1400"
+					role="img"
+					aria-label={t('landing.security.image_alt')}
+				>
+					<use data-lazy-href={`${lockedJournal}#locked-journal`} />
+				</svg>
 			</div>
 
 			<div class="w-full space-y-6 lg:w-1/2">
@@ -35,3 +43,19 @@ const items = [
 		</div>
 	</div>
 </section>
+
+<script>
+	// <use> no tiene loading="lazy": se descarga el svg solo cuando el dibujo esta cerca de verse
+	const io = new IntersectionObserver(
+		(entries) => {
+			for (const entry of entries) {
+				if (!entry.isIntersecting) continue;
+				const use = entry.target.querySelector('use[data-lazy-href]');
+				if (use) use.setAttribute('href', use.getAttribute('data-lazy-href') ?? '');
+				io.unobserve(entry.target);
+			}
+		},
+		{ rootMargin: '300px' }
+	);
+	document.querySelectorAll('svg:has(use[data-lazy-href])').forEach((svg) => io.observe(svg));
+</script>

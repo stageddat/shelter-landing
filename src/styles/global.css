@@ -15,6 +15,18 @@ html {
 	}
 }
 
+/* colores de los dibujos (machka-hero, locked-journal): siguen el tema, light por defecto */
+.illustration {
+	--illustration-fill: var(--background);
+	--illustration-line: var(--foreground);
+
+	/* temas oscuros: relleno claro y linea oscura */
+	.dark & {
+		--illustration-fill: var(--foreground);
+		--illustration-line: var(--background);
+	}
+}
+
 /*
  * Escala de la home: todo lo de dentro (texto, h1-h6, espacios, botones) se ve mas grande
  * sin poner tamaños a mano. Tailwind lee los tamaños de variables, asi que basta con

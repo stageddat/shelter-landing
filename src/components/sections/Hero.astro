@@ -33,7 +33,7 @@ const t = useTranslations(Astro.currentLocale);
 			<div class="relative w-full max-w-[min(20rem,32svh)] sm:max-w-[min(32rem,42svh)] lg:max-w-175">
 				<div class="hero-blob absolute inset-[8%] bg-muted" aria-hidden="true"></div>
 				<svg
-					class="machka-hero relative h-auto w-full"
+					class="machka-hero illustration relative h-auto w-full"
 					viewBox="0 0 1400 1400"
 					role="img"
 					aria-label={t('landing.hero.image_alt')}
@@ -46,17 +46,6 @@ const t = useTranslations(Astro.currentLocale);
 </section>
 
 <style>
-	/* light*/
-	.machka-hero {
-		--hero-fill: var(--background);
-		--hero-line: var(--foreground);
-	}
-	/* dark themes. :global pq .dark esta en <html>, fuera de este componente */
-	:global(.dark) .machka-hero {
-		--hero-fill: var(--foreground);
-		--hero-line: var(--background);
-	}
-
 	.hero-blob {
 		border-radius: 58% 42% 52% 48% / 46% 56% 44% 54%;
 	}
