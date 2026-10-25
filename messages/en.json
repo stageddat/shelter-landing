@@ -1,8 +1,8 @@
 {
 	"metadata": {
 		"landing": {
-			"title": "shelter - your cozy, secure & open source journal",
-			"description": "write your thoughts in a cozy, 100% secure personal space. your data stays completely private and under your control."
+			"title": "shelter - private, end-to-end encrypted journal app",
+			"description": "a cozy, open source online diary with end-to-end encryption. write offline in your browser; only you can read your entries."
 		},
 		"cookies": {
 			"title": "cookie policy - shelter",
@@ -19,12 +19,17 @@
 		"credits": {
 			"title": "credits - shelter",
 			"description": "thanks to all the amazing people who made this project possible."
+		},
+		"notFound": {
+			"title": "page not found - shelter",
+			"description": "this page doesn't exist."
 		}
 	},
 	"landing": {
 		"hero": {
 			"title": "shelter",
 			"subtitle": "a safe place where your thoughts can breathe",
+			"tagline": "- an encrypted, open source journal that works offline",
 			"image_alt": "machka writing her journal with her kitty ziggy",
 			"cta": "start writing",
 			"secondary_cta": "see how it works"
@@ -287,6 +292,11 @@
 				"tester": "tester",
 				"translator": "translator"
 			}
+		},
+		"notFound": {
+			"title": "ups? this page doesn't exist",
+			"description": "maybe it moved, or the link has a typo.",
+			"home": "back to home"
 		}
 	}
 }

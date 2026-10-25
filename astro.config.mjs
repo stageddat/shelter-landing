@@ -12,7 +12,6 @@ export default defineConfig({
 
 	integrations: [
 		svelte(),
-		// /sitemap-index.xml: todas las paginas, cada una con sus versiones en otros idiomas
 		sitemap({
 			i18n: { defaultLocale, locales: Object.fromEntries(locales.map((l) => [l, l])) }
 		})
