@@ -1,0 +1,16 @@
+{
+	"$schema": "https://openapi.vercel.sh/vercel.json",
+	"redirects": [
+		{ "source": "/app", "destination": "https://app.shelter.cat/", "permanent": true },
+		{ "source": "/app/:path*", "destination": "https://app.shelter.cat/:path*", "permanent": true },
+		{ "source": "/login", "destination": "https://app.shelter.cat/login", "permanent": true },
+		{ "source": "/signup", "destination": "https://app.shelter.cat/signup", "permanent": true },
+		{ "source": "/restore", "destination": "https://app.shelter.cat/restore", "permanent": true }
+	],
+	"headers": [
+		{
+			"source": "/sw.js",
+			"headers": [{ "key": "Cache-Control", "value": "no-cache, no-store, must-revalidate" }]
+		}
+	]
+}
