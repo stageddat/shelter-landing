@@ -6,7 +6,7 @@ import Section from '../Section.astro';
 
 const t = useTranslations(Astro.currentLocale);
 
-const faqs = ([1, 2, 3, 4, 5, 6] as const).map((n) => ({
+const faqs = ([1, 2, 3, /* 4, */ 5, 6] as const).map((n) => ({
 	question: t(`landing.faqs.${n}.question`),
 	answer: safeHtml(t(`landing.faqs.${n}.answer`))
 }));
